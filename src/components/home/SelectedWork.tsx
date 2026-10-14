@@ -13,17 +13,16 @@ export function SelectedWork() {
     <section id="selected-work" className={styles.section}>
       <Container>
         <SectionHeading
-          label="Portfolio"
-          title="Selected Work"
-          description="A selection of brand strategy, campaign, and go-to-market projects."
+          title="Case Studies"
+          description="Brand identity, campaign analysis, product launches, and social communication."
         />
         <div className={styles.grid}>
           {projects.map((project, index) => (
             <div
               key={project.slug}
-              className={`${styles.gridItem} ${index === 0 ? styles.gridItemLarge : ''}`}
+              className={styles.gridItem}
             >
-              <ProjectPreview project={project} featured={index === 0} />
+              <ProjectPreview project={project} index={index} />
             </div>
           ))}
         </div>

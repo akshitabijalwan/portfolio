@@ -5,6 +5,7 @@ import { Footer } from './components/layout/Footer';
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
 import { CaseStudyPage } from './pages/CaseStudyPage';
+import { getCaseStudy } from './data/case-studies';
 import { siteConfig } from './data/site';
 import './styles/global.css';
 
@@ -18,11 +19,8 @@ export default function App() {
         break;
       case '/projects/:slug': {
         const slug = route.params.slug;
-        const title = slug
-          .split('-')
-          .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-          .join(' ');
-        document.title = `${title} — ${siteConfig.candidateName}`;
+        const caseStudy = getCaseStudy(slug);
+        document.title = `${caseStudy?.brand ?? 'Project'} — ${siteConfig.candidateName}`;
         break;
       }
       default:

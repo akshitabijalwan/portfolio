@@ -28,14 +28,14 @@
     <text x="0" y="-50" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" letter-spacing="4" fill="#8B6F4E" text-transform="uppercase">Brand Manager Portfolio</text>
     
     <!-- Title -->
-    <text x="0" y="0" text-anchor="middle" font-family="Georgia, serif" font-size="37.5" font-weight="400" fill="#191919">Tara Sharma — Portfolio</text>
+    <text x="0" y="0" text-anchor="middle" font-family="Georgia, serif" font-size="37.5" font-weight="400" fill="#191919">Akshita Bijalwan — Portfolio</text>
     
     <!-- Label -->
     <text x="0" y="45" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" letter-spacing="1.5" fill="#747474">Open Graph Social Preview</text>
     
-    <!-- Watermark / Placeholder Notice -->
-    <rect x="-110" y="80" width="220" height="28" rx="2" fill="#E8E4DC" />
-    <text x="0" y="98" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" letter-spacing="1" fill="#747474">DEMONSTRATION ASSET</text>
+    <!-- Practice areas -->
+    <rect x="-160" y="80" width="320" height="28" rx="2" fill="#E8E4DC" />
+    <text x="0" y="98" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" letter-spacing="1" fill="#747474">BRAND STRATEGY · PRODUCT DEVELOPMENT</text>
   </g>
 
   <!-- Dimensions Indicator bottom-right -->

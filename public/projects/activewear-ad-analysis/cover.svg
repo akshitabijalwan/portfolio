@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse"><stop stop-color="#F2F1E8"/><stop offset="1" stop-color="#E6EBD9"/></linearGradient>
+    <linearGradient id="green" x1="120" y1="100" x2="890" y2="800" gradientUnits="userSpaceOnUse"><stop stop-color="#D5FF8C"/><stop offset="1" stop-color="#A6DC52"/></linearGradient>
+    <filter id="shadow" x="808" y="92" width="687" height="716" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1600" height="900" rx="34" fill="url(#bg)"/>
+  <circle cx="1396" cy="109" r="225" fill="#E4E8D7"/>
+  <circle cx="121" cy="847" r="220" fill="#E7EADB"/>
+  <text x="104" y="112" fill="#607344" font-family="Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="5">PAID SOCIAL · CREATIVE PERFORMANCE</text>
+  <text x="100" y="266" fill="#222823" font-family="Arial,sans-serif" font-size="76" font-weight="500" letter-spacing="-4">From scroll-stop</text>
+  <text x="100" y="354" fill="#222823" font-family="Arial,sans-serif" font-size="76" font-weight="500" letter-spacing="-4">to sale.</text>
+  <text x="106" y="423" fill="#656B62" font-family="Arial,sans-serif" font-size="27">Reading the space between attention and action.</text>
+  <rect x="99" y="500" width="565" height="265" rx="26" fill="url(#green)"/>
+  <text x="142" y="568" fill="#324127" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2">BEST CONVERSION RATE</text>
+  <text x="137" y="688" fill="#21291F" font-family="Arial,sans-serif" font-size="112" font-weight="600" letter-spacing="-8">5.11%</text>
+  <text x="144" y="733" fill="#435339" font-family="Arial,sans-serif" font-size="20">201 conversions · POD1</text>
+  <rect x="781" y="125" width="650" height="650" rx="38" fill="#242B26" filter="url(#shadow)" opacity=".18"/>
+  <rect x="753" y="105" width="650" height="650" rx="38" fill="#252D28"/>
+  <text x="803" y="164" fill="#C6F477" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="2">ATTENTION ≠ ACTION</text>
+  <text x="803" y="225" fill="#F1F0E5" font-family="Arial,sans-serif" font-size="22">Two very different signals</text>
+  <text x="803" y="325" fill="#F1F0E5" font-family="Arial,sans-serif" font-size="18">#56 V1 · hold rate</text>
+  <text x="1351" y="325" fill="#C6F477" font-family="Arial,sans-serif" font-size="23" font-weight="700" text-anchor="end">46.18%</text>
+  <rect x="803" y="347" width="548" height="12" rx="6" fill="#414A40"/><rect x="803" y="347" width="505" height="12" rx="6" fill="#C6F477"/>
+  <text x="803" y="426" fill="#F1F0E5" font-family="Arial,sans-serif" font-size="18">#56 V1 · conversion rate</text>
+  <text x="1351" y="426" fill="#F0B391" font-family="Arial,sans-serif" font-size="23" font-weight="700" text-anchor="end">3.94%</text>
+  <rect x="803" y="448" width="548" height="12" rx="6" fill="#414A40"/><rect x="803" y="448" width="216" height="12" rx="6" fill="#F0B391"/>
+  <path d="M803 525H1351" stroke="#414A40" stroke-width="2"/>
+  <circle cx="826" cy="587" r="13" fill="#C6F477"/><text x="858" y="595" fill="#F1F0E5" font-family="Arial,sans-serif" font-size="19">A hook buys a moment.</text>
+  <circle cx="826" cy="651" r="13" fill="#F0B391"/><text x="858" y="659" fill="#F1F0E5" font-family="Arial,sans-serif" font-size="19">A clear story earns the next step.</text>
+  <text x="106" y="826" fill="#78806F" font-family="Arial,sans-serif" font-size="16" letter-spacing="1">ANONYMIZED CAMPAIGN REVIEW · BAMBOO ACTIVEWEAR</text>
+</svg>

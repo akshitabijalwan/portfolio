@@ -11,15 +11,13 @@ export function CaseStudyHeader({ caseStudy }: CaseStudyHeaderProps) {
   return (
     <header className={styles.header}>
       <Container>
-        <div className={styles.meta}>
-          <span className={styles.category}>{caseStudy.category}</span>
-          <span className={styles.separator}>·</span>
-          <span className={styles.year}>{caseStudy.year}</span>
-          <span className={styles.separator}>·</span>
-          <span className={styles.industry}>{caseStudy.industry}</span>
+        <div className={styles.meta} aria-label="Project details">
+          {[caseStudy.category, caseStudy.year, caseStudy.industry].filter(Boolean).map((item) => (
+            <span className={styles.metaItem} key={item}>{item}</span>
+          ))}
         </div>
-        <h1 className={styles.title}>{caseStudy.title}</h1>
         <p className={styles.brand}>{caseStudy.brand}</p>
+        <h1 className={styles.title}>{caseStudy.title}</h1>
 
         <div className={styles.details}>
           <div className={styles.detailItem}>
@@ -46,9 +44,10 @@ export function CaseStudyHeader({ caseStudy }: CaseStudyHeaderProps) {
           <ResponsiveImage
             src={caseStudy.heroImage.src}
             alt={caseStudy.heroImage.alt}
-            aspectRatio="landscape"
+            aspectRatio="auto"
+            objectFit="contain"
             lazy={false}
-            fullWidth
+            className={styles.heroVisual}
           />
         </div>
       )}

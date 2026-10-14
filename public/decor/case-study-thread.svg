@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="2400" viewBox="0 0 1440 2400" fill="none" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="thread" x1="20" y1="0" x2="34" y2="2400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#76A93D"/>
+      <stop offset=".26" stop-color="#D98661"/>
+      <stop offset=".52" stop-color="#568DD0"/>
+      <stop offset=".76" stop-color="#9E6CB5"/>
+      <stop offset="1" stop-color="#B48A36"/>
+    </linearGradient>
+    <filter id="soft" x="0" y="0" width="130" height="2400" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+  <path d="M20-20C40 108 11 196 24 324C37 452 42 506 23 635C5 765 15 866 28 986C41 1105 44 1193 24 1310C5 1430 16 1540 29 1655C42 1770 45 1867 23 1986C4 2106 15 2227 34 2420" stroke="url(#thread)" stroke-width="10" stroke-linecap="round" opacity=".24" filter="url(#soft)"/>
+  <path d="M20-20C40 108 11 196 24 324C37 452 42 506 23 635C5 765 15 866 28 986C41 1105 44 1193 24 1310C5 1430 16 1540 29 1655C42 1770 45 1867 23 1986C4 2106 15 2227 34 2420" stroke="url(#thread)" stroke-width="3.4" stroke-linecap="round" opacity=".9"/>
+  <circle cx="24" cy="324" r="5" fill="#D98661"/>
+  <circle cx="28" cy="986" r="5" fill="#568DD0"/>
+  <circle cx="29" cy="1655" r="5" fill="#9E6CB5"/>
+  <circle cx="34" cy="2227" r="5" fill="#B48A36"/>
+</svg>

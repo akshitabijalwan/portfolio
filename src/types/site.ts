@@ -6,11 +6,35 @@ export interface SiteConfig {
   heroIntroduction: string;
   shortBio: string;
   email: string;
-  linkedInUrl: string;
+  phone: string;
+  location: string;
   resumePath: string | null;
   resumeAvailable: boolean;
   profileImagePath: string | null;
   capabilities: string[];
+  experience: {
+    role: string;
+    organization?: string;
+    dates: string;
+    highlights: string[];
+  }[];
+  internships: {
+    organization: string;
+    dates: string;
+    detail: string;
+  }[];
+  selectedProjects: {
+    name: string;
+    focus: string;
+    dates?: string;
+    detail: string;
+  }[];
+  education: {
+    qualification: string;
+    institution: string;
+    dates: string;
+  }[];
+  courses: string[];
   ogImagePath: string | null;
   siteUrl: string;
   repositoryName: string;

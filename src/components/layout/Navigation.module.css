@@ -2,8 +2,10 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: var(--color-bg);
-  border-bottom: 1px solid var(--color-border);
+  background: rgba(245, 245, 247, 0.82);
+  border-bottom: 1px solid rgba(210, 210, 215, 0.55);
+  backdrop-filter: saturate(180%) blur(18px);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
 }
 
 .nav {
@@ -12,14 +14,14 @@
   justify-content: space-between;
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: var(--space-lg) var(--container-padding);
+  padding: 0.95rem var(--container-padding);
 }
 
 .wordmark {
-  font-family: var(--font-display);
-  font-size: var(--text-lg);
-  font-weight: 400;
-  letter-spacing: -0.01em;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
   color: var(--color-text);
   text-decoration: none;
   transition: opacity var(--transition-fast);
@@ -32,22 +34,22 @@
 .desktopLinks {
   display: flex;
   align-items: center;
-  gap: var(--space-xl);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
   list-style: none;
 }
 
 .navLink {
   font-family: var(--font-body);
-  font-size: var(--text-sm);
-  font-weight: 400;
-  color: var(--color-text-secondary);
+  font-size: 0.82rem;
+  font-weight: 450;
+  color: var(--color-text);
   text-decoration: none;
   transition: color var(--transition-fast);
   letter-spacing: 0.01em;
 }
 
 .navLink:hover {
-  color: var(--color-text);
+  color: var(--color-accent);
 }
 
 .mobileToggle {
@@ -70,7 +72,9 @@
 .mobileNavLink {
   display: block;
   font-family: var(--font-display);
-  font-size: var(--text-2xl);
+  font-size: clamp(2rem, 8vw, 3rem);
+  font-weight: 650;
+  letter-spacing: -0.05em;
   color: var(--color-text);
   text-decoration: none;
   padding: var(--space-md) 0;
@@ -100,7 +104,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--color-bg);
+    background-color: rgba(245, 245, 247, 0.98);
     z-index: 105;
     padding: 6rem var(--container-padding) var(--space-2xl);
     opacity: 0;

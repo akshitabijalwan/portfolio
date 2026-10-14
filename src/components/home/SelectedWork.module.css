@@ -1,15 +1,21 @@
 .section {
-  padding: var(--space-4xl) 0;
+  padding: clamp(5rem, 10vw, 8rem) 0;
+  background: #fff;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-3xl) var(--space-2xl);
+  align-items: start;
+  gap: clamp(2rem, 4vw, 3.5rem) clamp(1.25rem, 2.4vw, 2rem);
 }
 
-.gridItemLarge {
-  grid-column: 1 / -1;
+.gridItem {
+  min-width: 0;
+}
+
+.gridItem:nth-child(even) {
+  padding-top: clamp(1.5rem, 5vw, 4.5rem);
 }
 
 @media (max-width: 768px) {
@@ -19,6 +25,10 @@
   }
 
   .section {
-    padding: var(--space-3xl) 0;
+    padding: 4.5rem 0;
+  }
+
+  .gridItem:nth-child(even) {
+    padding-top: 0;
   }
 }

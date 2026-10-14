@@ -1,7 +1,7 @@
 .footer {
-  border-top: 1px solid var(--color-border);
-  padding: var(--space-2xl) 0;
-  margin-top: var(--space-4xl);
+  border-top: 1px solid rgba(210, 210, 215, 0.8);
+  padding: 1.5rem 0;
+  margin-top: 0;
 }
 
 .inner {
@@ -19,8 +19,9 @@
 }
 
 .name {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: var(--text-sm);
+  font-weight: 600;
   color: var(--color-text);
 }
 
@@ -43,7 +44,7 @@
 }
 
 .footerLink:hover {
-  color: var(--color-text);
+  color: var(--color-accent);
 }
 
 .backToTop {

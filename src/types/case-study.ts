@@ -7,7 +7,8 @@ export type CaseStudySectionType =
   | 'pull-quote'
   | 'statistics'
   | 'timeline'
-  | 'deliverables';
+  | 'deliverables'
+  | 'campaign-analysis';
 
 export interface CaseStudyTextSection {
   type: 'text';
@@ -25,6 +26,7 @@ export interface CaseStudyTextWithImageSection {
 
 export interface CaseStudyFullWidthImageSection {
   type: 'full-width-image';
+  heading?: string;
   image: CaseStudyImage;
 }
 
@@ -36,6 +38,9 @@ export interface CaseStudyTwoColumnImagesSection {
 export interface CaseStudyImageGallerySection {
   type: 'image-gallery';
   heading?: string;
+  description?: string;
+  layout?: 'editorial-rail' | 'social-carousel';
+  aspectRatio?: 'landscape' | 'portrait' | 'square' | 'auto';
   images: CaseStudyImage[];
 }
 
@@ -63,6 +68,32 @@ export interface CaseStudyDeliverablesSection {
   items: string[];
 }
 
+export interface CaseStudyCampaignAnalysisSection {
+  type: 'campaign-analysis';
+  heading: string;
+  intro: string;
+  rows: {
+    ad: string;
+    hook: number;
+    hold: number;
+    clicks: number;
+    conversions: number;
+    conversionRate: number;
+    watchTime: string;
+    read: string;
+  }[];
+  findings: { eyebrow: string; title: string; body: string; metric?: string }[];
+  comparison: {
+    label: string;
+    title: string;
+    plays: string;
+    averageWatch: string;
+    hook: string;
+    hold: string;
+    note: string;
+  }[];
+}
+
 export interface CaseStudyImage {
   src: string;
   alt: string;
@@ -81,7 +112,8 @@ export type CaseStudySection =
   | CaseStudyPullQuoteSection
   | CaseStudyStatisticsSection
   | CaseStudyTimelineSection
-  | CaseStudyDeliverablesSection;
+  | CaseStudyDeliverablesSection
+  | CaseStudyCampaignAnalysisSection;
 
 export interface CaseStudy {
   slug: string;

@@ -33,15 +33,15 @@ A modern, content-driven, editorial portfolio website built for a Brand Manager.
 
 ### Prerequisites
 
-- Node.js 18 or newer
-- npm 9 or newer
+- Node.js 22 or newer
+- npm 10 or newer
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/akshitabijalwan/portfolio.git
+cd portfolio
 
 # Install dependencies
 npm install
@@ -310,10 +310,10 @@ Brand portfolios feature photography, packaging mockups, campaign visuals, and i
 
 ## 7. Deploying to GitHub Pages
 
-The project includes an automated GitHub Actions deployment workflow in `.github/workflows/deploy.yml`.
+The repository is configured to deploy automatically through `.github/workflows/deploy.yml`. Each push to `main` builds the site and publishes the `dist/` output to GitHub Pages. You can also start a deployment from the repository's **Actions** tab with **Run workflow**.
 
 ### Step 1: Set the Base Path
-In `vite.config.ts`, update `REPO_NAME` to match your GitHub repository name:
+The Vite base path is already set for this repository. If the repository is renamed, update `REPO_NAME` in `vite.config.ts` and `repositoryName` in `src/data/site.ts` to match:
 ```typescript
 const REPO_NAME = 'portfolio'; // e.g., 'tara-portfolio' or '' if using username.github.io
 ```
@@ -323,20 +323,11 @@ Also update `repositoryName` in `src/data/site.ts`.
 
 ### Step 2: Push to GitHub
 ```bash
-git init
-git add .
-git commit -m "Initial portfolio build"
-git branch -M main
-git remote add origin https://github.com/your-username/your-repo-name.git
+git remote add origin https://github.com/akshitabijalwan/portfolio.git
 git push -u origin main
 ```
 
-### Step 3: Enable GitHub Pages in Repository Settings
-1. Navigate to your repository on GitHub.
-2. Click **Settings** → **Pages** (under the "Code and automation" section).
-3. Under **Build and deployment** → **Source**, select **GitHub Actions**.
-4. Push any commit to `main` (or run the workflow manually via the **Actions** tab).
-5. Your portfolio will be live at `https://<username>.github.io/<repository-name>/`.
+The Pages workflow uses GitHub's Pages artifact deployment actions and requests the minimum required `pages: write` and `id-token: write` permissions. Once GitHub Pages is enabled for the repository, the deployed site will be available at `https://akshitabijalwan.github.io/portfolio/`.
 
 ---
 

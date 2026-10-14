@@ -22,13 +22,8 @@ export function Footer() {
             >
               Email
             </a>
-            <a
-              href={siteConfig.linkedInUrl}
-              className={styles.footerLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
+            <a href={`tel:${siteConfig.phone}`} className={styles.footerLink}>
+              Call
             </a>
             <button
               className={styles.backToTop}

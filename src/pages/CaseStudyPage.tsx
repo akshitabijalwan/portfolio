@@ -17,7 +17,7 @@ export function CaseStudyPage({ slug }: CaseStudyPageProps) {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [slug]);
+  }, [caseStudy?.slug]);
 
   if (!caseStudy) {
     return (
@@ -34,13 +34,13 @@ export function CaseStudyPage({ slug }: CaseStudyPageProps) {
   }
 
   // Find prev/next projects
-  const currentIndex = allProjects.findIndex((p) => p.slug === slug);
+  const currentIndex = allProjects.findIndex((p) => p.slug === caseStudy.slug);
   const previousProject = currentIndex > 0 ? allProjects[currentIndex - 1] : undefined;
   const nextProject =
     currentIndex < allProjects.length - 1 ? allProjects[currentIndex + 1] : undefined;
 
   return (
-    <main>
+    <main className={`${styles.caseStudy} ${caseStudy.slug === 'mother-sparsh' ? styles.babyStudy : ''}`}>
       <CaseStudyHeader caseStudy={caseStudy} />
       <CaseStudySections
         overview={caseStudy.overview}
@@ -48,6 +48,8 @@ export function CaseStudyPage({ slug }: CaseStudyPageProps) {
         objectives={caseStudy.objectives}
         responsibilities={caseStudy.responsibilities}
         sections={caseStudy.sections}
+        visualTone={slug === 'mother-sparsh' ? 'baby' : undefined}
+        galleriesFirst={slug === 'mother-sparsh'}
       />
       <ProjectNavigation
         previousProject={previousProject}

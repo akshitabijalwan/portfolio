@@ -1,43 +1,49 @@
 .hero {
-  padding: var(--space-5xl) 0 var(--space-4xl);
-  min-height: 70vh;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(4.5rem, 9vh, 7rem) 0 clamp(4rem, 8vh, 6rem);
+  min-height: min(70vh, 760px);
   display: flex;
   align-items: center;
 }
 
-.content {
-  max-width: 720px;
+.thread {
+  position: absolute;
+  z-index: -1;
+  top: 5%;
+  right: max(3%, calc((100vw - 1440px) / 2));
+  width: min(37vw, 500px);
+  height: auto;
+  opacity: 0.48;
+  pointer-events: none;
 }
 
-.label {
-  font-family: var(--font-body);
-  font-size: var(--text-xs);
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-text-secondary);
-  margin-bottom: var(--space-lg);
+.content {
+  max-width: 980px;
 }
 
 .headline {
   font-family: var(--font-display);
-  font-size: var(--text-5xl);
+  font-size: clamp(2.35rem, 5.4vw, 4.8rem);
+  font-weight: 400;
   line-height: 1.08;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.045em;
   color: var(--color-text);
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-2xl);
 }
 
 .subheadline {
-  font-size: var(--text-lg);
-  line-height: 1.6;
-  color: var(--color-text-secondary);
-  margin-bottom: var(--space-lg);
+  font-size: clamp(1.25rem, 2.1vw, 1.75rem);
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
 }
 
 .intro {
-  font-size: var(--text-base);
-  line-height: 1.7;
+  font-size: 1.05rem;
+  line-height: 1.65;
   color: var(--color-text-secondary);
   margin-bottom: var(--space-2xl);
   max-width: 580px;
@@ -46,24 +52,31 @@
 .actions {
   display: flex;
   align-items: center;
-  gap: var(--space-lg);
+  gap: 0.8rem;
   flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding: var(--space-3xl) 0 var(--space-2xl);
+    padding: 4rem 0 3.5rem;
     min-height: auto;
   }
 
+  .thread {
+    width: 54vw;
+    top: 1%;
+    right: -14%;
+    opacity: 0.34;
+  }
+
   .headline {
-    font-size: var(--text-4xl);
+    font-size: clamp(2rem, 6vw, 2.55rem);
   }
 }
 
 @media (max-width: 480px) {
   .headline {
-    font-size: var(--text-3xl);
+    font-size: clamp(1.9rem, 7.4vw, 2.25rem);
   }
 
   .subheadline {
