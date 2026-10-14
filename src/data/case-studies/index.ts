@@ -1,4 +1,5 @@
 import type { CaseStudy } from '../../types/case-study';
+import { synxStore } from './synx-store';
 import { brandPositioningStrategy } from './brand-positioning-strategy';
 import { integratedMarketingCampaign } from './integrated-marketing-campaign';
 import { productLaunchGoToMarket } from './product-launch-go-to-market';
@@ -11,6 +12,7 @@ import { productLaunchGoToMarket } from './product-launch-go-to-market';
  * 3. Add it to the caseStudies object below
  */
 export const caseStudies: Record<string, CaseStudy> = {
+  'synx-store': synxStore,
   'brand-positioning-strategy': brandPositioningStrategy,
   'integrated-marketing-campaign': integratedMarketingCampaign,
   'product-launch-go-to-market': productLaunchGoToMarket,

@@ -16,6 +16,22 @@ import type { ProjectMeta } from '../types/project';
  */
 export const projects: ProjectMeta[] = [
   {
+    slug: 'synx-store',
+    title: 'Brand Identity & Social Media Strategy',
+    brand: 'Synx Store',
+    year: '2024',
+    industry: 'Home & Garden / E-Commerce',
+    category: 'Brand Strategy & Identity',
+    summary:
+      'A complete brand foundation and social strategy for an online-first garden tool brand: positioning ("Built to work. Priced to trust."), logo identity, color palette, typography, photography standards, and content architecture.',
+    coverImage: 'projects/synx-store/cover.svg',
+    coverImageAlt: 'Synx Store Brand Identity & Strategy Cover',
+    coverAspectRatio: 'landscape',
+    role: 'Brand Manager',
+    featured: true,
+    order: 1,
+  },
+  {
     slug: 'brand-positioning-strategy',
     title: 'Brand Positioning & Strategy',
     brand: 'Sample Brand Alpha',
@@ -29,7 +45,7 @@ export const projects: ProjectMeta[] = [
     coverAspectRatio: 'landscape',
     role: 'Brand Manager',
     featured: true,
-    order: 1,
+    order: 2,
   },
   {
     slug: 'integrated-marketing-campaign',
@@ -45,7 +61,7 @@ export const projects: ProjectMeta[] = [
     coverAspectRatio: 'landscape',
     role: 'Brand Manager',
     featured: true,
-    order: 2,
+    order: 3,
   },
   {
     slug: 'product-launch-go-to-market',
@@ -61,7 +77,7 @@ export const projects: ProjectMeta[] = [
     coverAspectRatio: 'portrait',
     role: 'Brand Manager',
     featured: true,
-    order: 3,
+    order: 4,
   },
 ];
 
