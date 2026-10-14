@@ -1,0 +1,115 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-lg) var(--container-padding);
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+.wordmark:hover {
+  opacity: 0.7;
+}
+
+.desktopLinks {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  list-style: none;
+}
+
+.navLink {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  letter-spacing: 0.01em;
+}
+
+.navLink:hover {
+  color: var(--color-text);
+}
+
+.mobileToggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text);
+  padding: var(--space-xs);
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.mobileLinks {
+  list-style: none;
+}
+
+.mobileNavLink {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--color-text);
+  text-decoration: none;
+  padding: var(--space-md) 0;
+  transition: opacity var(--transition-fast);
+}
+
+.mobileNavLink:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .desktopLinks {
+    display: none;
+  }
+
+  .mobileToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 110;
+  }
+
+  .mobileMenu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-bg);
+    z-index: 105;
+    padding: 6rem var(--container-padding) var(--space-2xl);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-base), visibility var(--transition-base);
+  }
+
+  .mobileMenuOpen {
+    opacity: 1;
+    visibility: visible;
+  }
+}

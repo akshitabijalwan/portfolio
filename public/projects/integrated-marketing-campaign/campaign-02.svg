@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9F8F5" />
+      <stop offset="100%" stop-color="#EFECE6" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E6E3DC" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="url(#bgGradient)" />
+  <rect width="1200" height="1200" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Outer frame border -->
+  <rect x="24" y="24" width="1152" height="1152" fill="none" stroke="#DEDAD2" stroke-width="1.5" />
+
+  <!-- Corner markings -->
+  <path d="M 24 50 L 24 24 L 50 24" fill="none" stroke="#8B6F4E" stroke-width="2" />
+  <path d="M 1150 24 L 1176 24 L 1176 50" fill="none" stroke="#8B6F4E" stroke-width="2" />
+  <path d="M 24 1150 L 24 1176 L 50 1176" fill="none" stroke="#8B6F4E" stroke-width="2" />
+  <path d="M 1150 1176 L 1176 1176 L 1176 1150" fill="none" stroke="#8B6F4E" stroke-width="2" />
+
+  <!-- Content -->
+  <g transform="translate(600, 600)">
+    <!-- Category Badge -->
+    <text x="0" y="-50" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" letter-spacing="4" fill="#8B6F4E" text-transform="uppercase">Campaign Planning</text>
+    
+    <!-- Title -->
+    <text x="0" y="0" text-anchor="middle" font-family="Georgia, serif" font-size="37.5" font-weight="400" fill="#191919">Social Media Content Suite</text>
+    
+    <!-- Label -->
+    <text x="0" y="45" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" letter-spacing="1.5" fill="#747474">Gallery Asset 01</text>
+    
+    <!-- Watermark / Placeholder Notice -->
+    <rect x="-110" y="80" width="220" height="28" rx="2" fill="#E8E4DC" />
+    <text x="0" y="98" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" letter-spacing="1" fill="#747474">DEMONSTRATION ASSET</text>
+  </g>
+
+  <!-- Dimensions Indicator bottom-right -->
+  <text x="1160" y="1162" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#A09B90">1200 × 1200</text>
+</svg>
