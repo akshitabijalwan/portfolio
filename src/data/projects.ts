@@ -24,7 +24,7 @@ export const projects: ProjectMeta[] = [
     category: 'Brand Strategy & Identity',
     summary:
       'A complete brand foundation and social strategy for an online-first garden tool brand: positioning ("Built to work. Priced to trust."), logo identity, color palette, typography, photography standards, and content architecture.',
-    coverImage: 'projects/synx-store/cover.svg',
+    coverImage: 'projects/synx-store/cover.png',
     coverImageAlt: 'Synx Store Brand Identity & Strategy Cover',
     coverAspectRatio: 'landscape',
     role: 'Brand Manager',

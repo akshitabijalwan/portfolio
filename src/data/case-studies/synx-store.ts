@@ -19,7 +19,7 @@ export const synxStore: CaseStudy = {
   duration: '3 months',
   collaborators: 'Creative Design & Social Marketing Team',
   heroImage: {
-    src: 'projects/synx-store/hero.svg',
+    src: 'projects/synx-store/hero.png',
     alt: 'Synx Store Brand Identity & Strategy Banner',
   },
   overview:
