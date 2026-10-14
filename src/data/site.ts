@@ -3,11 +3,23 @@ import type { SiteConfig, NavItem } from '../types/site';
 export const siteConfig: SiteConfig = {
   candidateName: 'Akshita Bijalwan',
   professionalTitle: 'Brand Manager',
-  heroHeadline: 'Building brands with clarity, character, and purpose.',
+  heroHeadline: 'Aligning brand strategy with customer journeys to deliver measurable goals.',
   heroSubheadline:
-    'Brand strategy, product development, and creative communication shaped around real customer needs.',
-  heroIntroduction:
-    'I bring together consumer understanding, clear positioning, and thoughtful execution—from new product development and launch planning to identity, content, and paid social.',
+    'I define the goal a brand must achieve, then evaluate every product, message, and touchpoint against how it moves customers toward that goal.',
+  heroPoints: [
+    {
+      label: 'Strategy',
+      body: 'I set positioning and priorities based on the business objective and the market the brand competes in.',
+    },
+    {
+      label: 'Analysis',
+      body: 'I use consumer insight and performance data to test whether each decision supports that objective.',
+    },
+    {
+      label: 'Journey',
+      body: 'I map how each choice shapes the customer experience, from first awareness and launch through identity, content, and paid social.',
+    },
+  ],
   shortBio:
     'I’m a brand manager with experience across baby care, e-commerce, activewear, and consumer campaigns. My work spans new product development, portfolio review, brand positioning, identity systems, digital experience, content, and paid social. With a foundation in visual communication and design, I connect research and customer understanding to clear, practical brand expression.',
   email: 'akshitabijalwan9@gmail.com',

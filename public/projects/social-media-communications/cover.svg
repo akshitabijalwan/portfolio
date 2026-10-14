@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="paper" x1="80" y1="30" x2="1490" y2="875" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6F4EC"/><stop offset="1" stop-color="#E8EEE5"/>
+    </linearGradient>
+    <linearGradient id="lime" x1="90" y1="500" x2="680" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D8F49C"/><stop offset="1" stop-color="#B9DE78"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" rx="34" fill="url(#paper)"/>
+  <circle cx="1450" cy="50" r="245" fill="#DDE8D8" opacity=".72"/>
+  <circle cx="85" cy="875" r="210" fill="#EEE4D8" opacity=".62"/>
+  <text x="98" y="104" fill="#62784F" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="4">SOCIAL MEDIA · MULTI-BRAND STRATEGY</text>
+  <text x="96" y="218" fill="#202622" font-family="Arial,sans-serif" font-size="72" font-weight="500" letter-spacing="-3.5">Every feed starts</text>
+  <text x="96" y="301" fill="#202622" font-family="Arial,sans-serif" font-size="72" font-weight="500" letter-spacing="-3.5">with intent.</text>
+  <text x="102" y="367" fill="#697067" font-family="Arial,sans-serif" font-size="25">A six-step method from business goal to next test.</text>
+  <rect x="96" y="444" width="568" height="232" rx="27" fill="url(#lime)"/>
+  <text x="132" y="484" fill="#4D633D" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="2.5">THREE BRANDS · THREE BUSINESS NEEDS</text>
+  <path d="M132 506H628" stroke="#94B66A" stroke-width="1.5"/>
+  <text x="132" y="542" fill="#283326" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="1.4">MOTHER SPARSH</text>
+  <text x="628" y="542" fill="#283326" font-family="Arial,sans-serif" font-size="16" font-weight="600" text-anchor="end">Retention</text>
+  <path d="M132 562H628" stroke="#94B66A" stroke-width="1.5"/>
+  <text x="132" y="586" fill="#283326" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="1.4">MALINI</text>
+  <text x="628" y="586" fill="#283326" font-family="Arial,sans-serif" font-size="16" font-weight="600" text-anchor="end">Awareness</text>
+  <path d="M132 606H628" stroke="#94B66A" stroke-width="1.5"/>
+  <text x="132" y="630" fill="#283326" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="1.4">ZOOBY</text>
+  <text x="628" y="630" fill="#283326" font-family="Arial,sans-serif" font-size="16" font-weight="600" text-anchor="end">Consistency</text>
+  <rect x="744" y="103" width="754" height="672" rx="38" fill="#26312B"/>
+  <text x="794" y="164" fill="#C9ED8E" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="2.4">THE THINKING, MADE VISIBLE</text>
+  <text x="794" y="218" fill="#F2F3EB" font-family="Arial,sans-serif" font-size="27" font-weight="500">A social system built in six moves</text>
+  <path d="M826 278V690" stroke="#526154" stroke-width="3"/>
+  <g font-family="Arial,sans-serif">
+    <circle cx="826" cy="296" r="19" fill="#C9ED8E"/><text x="826" y="302" fill="#283326" font-size="13" font-weight="700" text-anchor="middle">01</text><text x="870" y="303" fill="#F2F3EB" font-size="21">Start with the business goal</text>
+    <circle cx="826" cy="374" r="19" fill="#B9DBD4"/><text x="826" y="380" fill="#283326" font-size="13" font-weight="700" text-anchor="middle">02</text><text x="870" y="381" fill="#F2F3EB" font-size="21">Research audience and category</text>
+    <circle cx="826" cy="452" r="19" fill="#EECFB5"/><text x="826" y="458" fill="#283326" font-size="13" font-weight="700" text-anchor="middle">03</text><text x="870" y="459" fill="#F2F3EB" font-size="21">Define the content mix</text>
+    <circle cx="826" cy="530" r="19" fill="#C9ED8E"/><text x="826" y="536" fill="#283326" font-size="13" font-weight="700" text-anchor="middle">04</text><text x="870" y="537" fill="#F2F3EB" font-size="21">Translate strategy into visuals</text>
+    <circle cx="826" cy="608" r="19" fill="#B9DBD4"/><text x="826" y="614" fill="#283326" font-size="13" font-weight="700" text-anchor="middle">05</text><text x="870" y="615" fill="#F2F3EB" font-size="21">Shape the messaging</text>
+    <circle cx="826" cy="686" r="19" fill="#EECFB5"/><text x="826" y="692" fill="#283326" font-size="13" font-weight="700" text-anchor="middle">06</text><text x="870" y="693" fill="#F2F3EB" font-size="21">Measure, learn, and choose what’s next</text>
+  </g>
+  <text x="101" y="824" fill="#78806F" font-family="Arial,sans-serif" font-size="15" letter-spacing="1.2">AUDIENCE-LED STRATEGY · FIVE DISTINCT SOCIAL STREAMS</text>
+</svg>

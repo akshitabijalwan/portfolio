@@ -70,9 +70,9 @@ export const projects: ProjectMeta[] = [
     category: 'Brand-specific Social Media Communication & Visualization',
     summary:
       'Five distinct social streams, each shaped around its audience: apparel and craft, baby care, children’s goods, technology, and jewelry.',
-    coverImage: 'projects/social-media-communications/topi-ai/01-prize-pool.png',
-    coverImageAlt: 'TOPI.AI social graphic promoting an $18,000 trading competition prize pool',
-    coverAspectRatio: 'square',
+    coverImage: 'projects/social-media-communications/cover.svg',
+    coverImageAlt: 'A six-step social strategy from business goal to measurement across five distinct streams',
+    coverAspectRatio: 'landscape',
     role: 'Social Media, Content & Visual Design',
     featured: true,
     order: 4,

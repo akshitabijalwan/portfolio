@@ -8,6 +8,7 @@ export type CaseStudySectionType =
   | 'statistics'
   | 'timeline'
   | 'deliverables'
+  | 'strategy-framework'
   | 'campaign-analysis';
 
 export interface CaseStudyTextSection {
@@ -37,7 +38,9 @@ export interface CaseStudyTwoColumnImagesSection {
 
 export interface CaseStudyImageGallerySection {
   type: 'image-gallery';
+  groupHeading?: string;
   heading?: string;
+  headingLevel?: 2 | 3;
   description?: string;
   layout?: 'editorial-rail' | 'social-carousel';
   aspectRatio?: 'landscape' | 'portrait' | 'square' | 'auto';
@@ -66,6 +69,19 @@ export interface CaseStudyDeliverablesSection {
   type: 'deliverables';
   heading?: string;
   items: string[];
+}
+
+export interface CaseStudyStrategyFrameworkSection {
+  type: 'strategy-framework';
+  heading: string;
+  overview?: string;
+  intro: string;
+  steps: {
+    title: string;
+    summary: string;
+    brandNotes?: { brand: string; tone: 'mother' | 'malini' | 'zooby'; body: string }[];
+    callout?: string;
+  }[];
 }
 
 export interface CaseStudyCampaignAnalysisSection {
@@ -113,6 +129,7 @@ export type CaseStudySection =
   | CaseStudyStatisticsSection
   | CaseStudyTimelineSection
   | CaseStudyDeliverablesSection
+  | CaseStudyStrategyFrameworkSection
   | CaseStudyCampaignAnalysisSection;
 
 export interface CaseStudy {

@@ -8,59 +8,69 @@ export const socialMediaCommunications: CaseStudy = {
   industry: 'Lifestyle, Baby Care, Technology & Retail',
   category: 'Brand-specific Social Media Communication & Visualization',
   role: 'Social Media, Content & Visual Design',
-  responsibilities: [
-    'Translate each brand’s audience and positioning into a recognisable social voice',
-    'Develop feed systems that balance product stories, education, people, and campaign moments',
-    'Adapt content formats and visual language across apparel, baby care, technology, and jewelry',
-  ],
   heroImage: {
-    src: 'projects/social-media-communications/topi-ai/01-prize-pool.png',
-    alt: 'TOPI.AI social graphic promoting an $18,000 trading competition prize pool',
+    src: 'projects/social-media-communications/cover.svg?v=2',
+    alt: 'Editorial strategy graphic showing six steps from business goal to measurement across five social streams',
   },
-  overview:
-    'A collection of social communication and visual-design work across five distinct brand streams. Each feed takes its own route: apparel foregrounds craft and styling; baby-care content balances parent reassurance with product education; children’s goods pair soft product imagery with practical guidance; technology uses high-contrast campaign graphics; and jewelry brings product detail, styling, and discovery together.',
-  challenge:
-    'Create social work that feels native to each brand instead of forcing every audience into one visual template. The work needed to communicate clearly at feed speed while making room for product detail, useful information, brand character, and campaign goals.',
-  objectives: [
-    'Make each brand recognisable through a consistent visual and verbal point of view',
-    'Balance promotion with useful, reassuring, or editorial content',
-    'Build feed sequences that combine product, people, proof points, and storytelling',
-    'Design adaptable social assets for both recurring content and campaign moments',
-  ],
+  overview: '',
   sections: [
     {
-      type: 'pull-quote',
-      quote: 'One feed can hold many stories, as long as they all sound like the same brand.',
-      attribution: 'Social communication principle',
-    },
-    {
-      type: 'text',
-      heading: 'Five streams, five visual languages',
-      body:
-        'These examples move between account presentation, feed composition, product stories, campaign graphics, and editorial styling. The common thread is intentionality: each post earns its place in the feed and reinforces what makes that brand distinct.',
-    },
-    {
-      type: 'image-gallery',
-      layout: 'social-carousel',
-      aspectRatio: 'portrait',
-      heading: '01 · Malini — Craft, material & modern styling',
-      description:
-        'An ethical clothing label designed in Italy and made in India. The account and feed bring together garment styling, textile details, craft, and process.',
-      images: [
+      type: 'strategy-framework',
+      heading: 'How I think through social strategy',
+      overview:
+        'I start with the business outcome and work outward: understand the audience, define the content mix, then shape each brand’s visual and verbal expression. I measure against the original objective and use what I learn to decide what to test next. Below, I show this six-step process and how it took a different form for each brand.',
+      intro:
+        'The objective comes first. Research reveals what the audience trusts, the content mix gives that insight a rhythm, and creative choices carry the strategy into each post. The last step closes the loop: measure against the original goal, then decide what to improve next.',
+      steps: [
         {
-          src: 'projects/social-media-communications/malini/01-profile.jpeg',
-          alt: 'Malini Instagram profile introducing its ethical clothing and design story',
-          caption: 'The profile makes the label’s clothing, craft, and India–Italy story easy to understand.',
+          title: 'Start with the business goal',
+          summary: 'The objective sets the content mix, format, and tone. Each brand began from a different business need.',
+          brandNotes: [
+            { brand: 'Mother Sparsh', tone: 'mother', body: 'An established, loyal customer base made retention the priority: keep parents engaged and encourage repeat purchase.' },
+            { brand: 'Malini', tone: 'malini', body: 'A handloom and handicraft category was new to its audience, so the first task was to build awareness.' },
+            { brand: 'Zooby', tone: 'zooby', body: 'The work needed to meet strict brand and demographic guidelines, making consistency and compliance central.' },
+          ],
         },
         {
-          src: 'projects/social-media-communications/malini/02-feed-overview.jpeg',
-          alt: 'Malini Instagram feed featuring clothing, textiles, people, and making process',
-          caption: 'A lively feed that alternates styling, textile, and behind-the-scenes moments.',
+          title: 'Research the audience and category',
+          summary: 'I look at category conventions, market expectations, and the signals that earn trust in each audience.',
+          brandNotes: [
+            { brand: 'Mother Sparsh', tone: 'mother', body: 'In Indian baby care, peer experience is persuasive. Real-user-style content can feel more trustworthy than polished production.' },
+            { brand: 'Malini', tone: 'malini', body: 'Italian fashion audiences respond to editorial aesthetics and heritage storytelling, shaping a more considered visual direction.' },
+            { brand: 'Zooby', tone: 'zooby', body: 'Dutch parents expect clean, functional, predictable design, informing a structured and easy-to-scan approach.' },
+          ],
         },
         {
-          src: 'projects/social-media-communications/malini/03-feed-details.jpeg',
-          alt: 'Malini Instagram grid with garment, craft, material, and lifestyle posts',
-          caption: 'Craft and material details sit alongside finished looks and everyday wear.',
+          title: 'Define the content mix from the goal',
+          summary: 'The strategy determines which stories recur and what the audience needs to understand first.',
+          brandNotes: [
+            { brand: 'Mother Sparsh', tone: 'mother', body: 'Usage tips, care routines, and customer stories support repeat engagement and help parents get more from the range.' },
+            { brand: 'Malini', tone: 'malini', body: 'Awareness content explains what handloom is, who makes it, and why the craft matters.' },
+            { brand: 'Zooby', tone: 'zooby', body: 'A repeatable content system keeps every post within the brand standards.' },
+          ],
+        },
+        {
+          title: 'Translate strategy into visual language',
+          summary: 'The visual system should make the strategy felt immediately, before a viewer reads every word.',
+          brandNotes: [
+            { brand: 'Mother Sparsh', tone: 'mother', body: 'Handheld framing and natural light give product stories an accessible, credible UGC character.' },
+            { brand: 'Malini', tone: 'malini', body: 'Soft light, textured close-ups, and muted earthy tones present the craft as premium and story-led.' },
+            { brand: 'Zooby', tone: 'zooby', body: 'A fixed palette, typography, and grid—with generous white space—keep the feed consistent.' },
+          ],
+        },
+        {
+          title: 'Shape the messaging',
+          summary: 'Each message should answer the audience’s need in that brand’s own voice.',
+          brandNotes: [
+            { brand: 'Mother Sparsh', tone: 'mother', body: 'Start with a parent’s problem, then position the product as a helpful answer.' },
+            { brand: 'Malini', tone: 'malini', body: 'Connect the craft to the product so the awareness story stays clear and memorable.' },
+            { brand: 'Zooby', tone: 'zooby', body: 'Keep copy short, factual, and benefit-led; avoid exaggerated claims.' },
+          ],
+        },
+        {
+          title: 'Measure the outcome and choose what is next',
+          summary: 'Measurement should reflect the business goal, so each brand has one result to track—such as engagement, saves, or repeat-purchase mentions.',
+          callout: 'I close with a test or change for the next round. That turns a set of posts into a learning loop, rather than treating each post as a one-off.',
         },
       ],
     },
@@ -68,24 +78,39 @@ export const socialMediaCommunications: CaseStudy = {
       type: 'image-gallery',
       layout: 'social-carousel',
       aspectRatio: 'portrait',
-      heading: '02 · Mother Sparsh — Trust, care & product education',
-      description:
-        'Baby-care communication that pairs parent and baby moments with product information, expert cues, and practical reassurance.',
+      heading: '01 · Mother Sparsh — Trust, care & product education',
       images: [
         {
           src: 'projects/social-media-communications/mother-sparsh/01-profile.jpeg',
           alt: 'Mother Sparsh Instagram profile presenting its baby-care products and brand promise',
-          caption: 'The profile sets out the baby-care range and the reassurance behind the brand.',
         },
         {
           src: 'projects/social-media-communications/mother-sparsh/02-feed-overview.jpeg',
           alt: 'Mother Sparsh Instagram feed mixing baby moments, product stories, and parent content',
-          caption: 'Product and parent stories keep practical care connected to real family life.',
         },
         {
           src: 'projects/social-media-communications/mother-sparsh/03-feed-details.jpeg',
           alt: 'Mother Sparsh feed examples with product education, expert content, and baby-care moments',
-          caption: 'Short-form education and product claims are balanced with warm, human imagery.',
+        },
+      ],
+    },
+    {
+      type: 'image-gallery',
+      layout: 'social-carousel',
+      aspectRatio: 'portrait',
+      heading: '02 · Malini — Craft, material & modern styling',
+      images: [
+        {
+          src: 'projects/social-media-communications/malini/01-profile.jpeg',
+          alt: 'Malini Instagram profile introducing its ethical clothing and design story',
+        },
+        {
+          src: 'projects/social-media-communications/malini/02-feed-overview.jpeg',
+          alt: 'Malini Instagram feed featuring clothing, textiles, people, and making process',
+        },
+        {
+          src: 'projects/social-media-communications/malini/03-feed-details.jpeg',
+          alt: 'Malini Instagram grid with garment, craft, material, and lifestyle posts',
         },
       ],
     },
@@ -94,23 +119,18 @@ export const socialMediaCommunications: CaseStudy = {
       layout: 'social-carousel',
       aspectRatio: 'portrait',
       heading: '03 · Zooby — Little comforts, clearly shown',
-      description:
-        'A children’s goods feed using soft color, product-in-use imagery, sleep guidance, reviews, and promotional moments to make the range approachable.',
       images: [
         {
           src: 'projects/social-media-communications/zooby/01-profile.jpeg',
           alt: 'Zooby Instagram profile for baby and children’s goods',
-          caption: 'The profile introduces a focused range of essentials for little ones.',
         },
         {
           src: 'projects/social-media-communications/zooby/02-feed-overview.jpeg',
           alt: 'Zooby feed using pastel graphics, children’s products, and lifestyle photography',
-          caption: 'Pastel product graphics and lifestyle images create a gentle, recognisable rhythm.',
         },
         {
           src: 'projects/social-media-communications/zooby/03-feed-details.jpeg',
           alt: 'Zooby social feed showing pillow products, sleep tips, reviews, and children',
-          caption: 'Feature-led posts, customer proof, and product-in-use scenes answer different parent needs.',
         },
       ],
     },
@@ -118,15 +138,10 @@ export const socialMediaCommunications: CaseStudy = {
       type: 'image-gallery',
       layout: 'social-carousel',
       aspectRatio: 'square',
-      heading: '04 · U-topia / TOPI.AI — Tech, offers & campaign energy',
-      description:
-        'High-contrast social artwork turns product plans, platform proof, quick facts, and trading promotions into a flexible campaign toolkit.',
+      groupHeading: 'Product Visual Design: Tech & Jewelry series',
+      heading: '04 · Tech — offers & campaign energy',
+      headingLevel: 3,
       images: [
-        {
-          src: 'projects/social-media-communications/topi-ai/01-prize-pool.png',
-          alt: 'TOPI.AI graphic promoting a trading competition and $18,000 prize pool',
-          caption: 'A bold prize-pool graphic puts the campaign incentive first.',
-        },
         {
           src: 'projects/social-media-communications/topi-ai/02-pricing.png',
           alt: 'TOPI.AI post comparing Basic and Pro plans with feature lists and prices',
@@ -147,15 +162,19 @@ export const socialMediaCommunications: CaseStudy = {
           alt: 'TOPI.AI promotional offer presented as a glowing message in an envelope',
           caption: 'A product offer is turned into a distinct campaign moment.',
         },
+        {
+          src: 'projects/social-media-communications/topi-ai/01-prize-pool.png',
+          alt: 'TOPI.AI graphic promoting a trading competition and $18,000 prize pool',
+          caption: 'A bold prize-pool graphic puts the campaign incentive first.',
+        },
       ],
     },
     {
       type: 'image-gallery',
       layout: 'social-carousel',
       aspectRatio: 'square',
-      heading: '05 · Jewelry — Detail, occasion & discovery',
-      description:
-        'Product-led visuals move between styling ideas, close-up detail, editorial moments, press mentions, and shopping prompts.',
+      heading: '05 · Jewelry: detail, occasion & discovery',
+      headingLevel: 3,
       images: [
         {
           src: 'projects/social-media-communications/jewelry/01-coastal-charm.png',

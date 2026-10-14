@@ -3,7 +3,7 @@ export interface SiteConfig {
   professionalTitle: string;
   heroHeadline: string;
   heroSubheadline: string;
-  heroIntroduction: string;
+  heroPoints: { label: string; body: string }[];
   shortBio: string;
   email: string;
   phone: string;

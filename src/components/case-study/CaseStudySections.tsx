@@ -16,14 +16,18 @@ interface CaseStudySectionsProps {
 }
 
 function EditorialGallery({
+  groupHeading,
   heading,
+  headingLevel = 2,
   description,
   images,
   aspectRatio = 'landscape',
   social = false,
   onOpen,
 }: {
+  groupHeading?: string;
   heading?: string;
+  headingLevel?: 2 | 3;
   description?: string;
   images: { src: string; alt: string; caption?: string }[];
   aspectRatio?: 'landscape' | 'portrait' | 'square' | 'auto';
@@ -32,6 +36,7 @@ function EditorialGallery({
 }) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [visibleCards, setVisibleCards] = useState<number[]>([]);
+  const HeadingTag = headingLevel === 3 ? 'h3' : 'h2';
 
   useEffect(() => {
     const track = trackRef.current;
@@ -60,7 +65,8 @@ function EditorialGallery({
 
   return (
     <section className={`${styles.gallerySection} ${social ? styles.socialStreamGallery : ''} ${social && aspectRatio === 'portrait' ? styles.socialPortraitGallery : ''}`}>
-      {heading && <h2 className={styles.sectionHeading}>{heading}</h2>}
+      {groupHeading && <h2 className={styles.socialGalleryGroupHeading}>{groupHeading}</h2>}
+      {heading && <HeadingTag className={styles.sectionHeading}>{heading}</HeadingTag>}
       {description && <p className={styles.socialStreamDescription}>{description}</p>}
       <p className={styles.galleryHint}>
         {social ? 'Swipe or scroll through this content stream' : 'Scroll to explore the applications'}
@@ -127,7 +133,9 @@ export function CaseStudySections({
       return (
         <Container key={`gallery-${idx}`}>
           <EditorialGallery
+            groupHeading={section.groupHeading}
             heading={section.heading}
+            headingLevel={section.headingLevel}
             description={section.description}
             images={section.images}
             aspectRatio={section.aspectRatio}
@@ -200,12 +208,14 @@ export function CaseStudySections({
         )}
 
       {/* Overview */}
-      <Container narrow>
-        <section className={styles.textSection}>
-          <h2 className={styles.sectionHeading}>Overview</h2>
-          <p className={styles.body}>{overview}</p>
-        </section>
-      </Container>
+      {overview.trim() && (
+        <Container narrow>
+          <section className={styles.textSection}>
+            <h2 className={styles.sectionHeading}>Overview</h2>
+            <p className={styles.body}>{overview}</p>
+          </section>
+        </Container>
+      )}
 
       {/* Challenge */}
       {challenge && (
@@ -423,6 +433,53 @@ export function CaseStudySections({
                       </li>
                     ))}
                   </ul>
+                </section>
+              </Container>
+            );
+
+          case 'strategy-framework':
+            return (
+              <Container key={idx}>
+                <section className={styles.strategyFramework}>
+                  <div className={styles.strategyFrameworkIntro}>
+                    <span className={styles.analysisKicker}>A repeatable approach · six steps</span>
+                    <h2 className={styles.sectionHeading}>{section.heading}</h2>
+                    {section.overview && <p className={styles.body}>{section.overview}</p>}
+                    <p className={styles.body}>{section.intro}</p>
+                  </div>
+                  <div className={styles.strategySteps}>
+                    {section.steps.map((step, stepIdx) => (
+                      <article className={styles.strategyStep} key={step.title}>
+                        <div className={styles.strategyStepHeading}>
+                          <span className={styles.strategyStepNumber}>{String(stepIdx + 1).padStart(2, '0')}</span>
+                          <div>
+                            <h3>{step.title}</h3>
+                            <p>{step.summary}</p>
+                          </div>
+                        </div>
+                        {step.brandNotes && step.brandNotes.length > 0 && (
+                          <div className={styles.strategyBrandGrid}>
+                            {step.brandNotes.map((note) => (
+                              <div
+                                className={`${styles.strategyBrandCard} ${
+                                  note.tone === 'mother'
+                                    ? styles.strategyMother
+                                    : note.tone === 'malini'
+                                      ? styles.strategyMalini
+                                      : styles.strategyZooby
+                                }`}
+                                key={note.brand}
+                              >
+                                <span>{note.brand}</span>
+                                <p>{note.body}</p>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                        {step.callout && <p className={styles.strategyCallout}>{step.callout}</p>}
+                      </article>
+                    ))}
+                  </div>
                 </section>
               </Container>
             );
