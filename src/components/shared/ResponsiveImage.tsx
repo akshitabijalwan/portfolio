@@ -74,7 +74,7 @@ export function ResponsiveImage({
       {(caption || credit) && (
         <figcaption className={styles.caption}>
           {caption}
-          {credit && <span className={styles.credit}> — {credit}</span>}
+          {credit && <span className={styles.credit}> · {credit}</span>}
         </figcaption>
       )}
     </figure>

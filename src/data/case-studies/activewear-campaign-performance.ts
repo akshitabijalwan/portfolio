@@ -3,7 +3,7 @@ import type { CaseStudy } from '../../types/case-study';
 export const activewearCampaignPerformance: CaseStudy = {
   slug: 'activewear-campaign-performance',
   title: 'Eight Ads, One Performance Picture',
-  brand: 'Bamboo Activewear · Campaign Readout',
+  brand: 'Activewear · Campaign Readout',
   year: '',
   industry: 'Activewear / E-commerce',
   category: 'Campaign Performance Analysis',
@@ -60,30 +60,6 @@ export const activewearCampaignPerformance: CaseStudy = {
       ],
     },
     {
-      type: 'image-gallery',
-      layout: 'editorial-rail',
-      heading: 'The creative behind the metrics',
-      description: 'I checked the ads themselves—not just the dashboard—to connect the numbers to what people actually saw. These examples come from the creative review; identifying brand marks are omitted.',
-      aspectRatio: 'square',
-      images: [
-        {
-          src: 'projects/activewear-ad-analysis/research/creative/stretch-comparison-a.png',
-          alt: 'An ad example pairing a customer-style quote with a leggings visual; identifying brand lockup cropped out',
-          caption: 'Human, specific proof can make an opener feel relatable; the product payoff still needs to follow naturally.',
-        },
-        {
-          src: 'projects/activewear-ad-analysis/research/creative/stretch-comparison-b.png',
-          alt: 'An ad example pairing an activewear headline with a short feature checklist; identifying brand lockup cropped out',
-          caption: 'Feature-led execution · A fast-scanning list, but the contrast in the headline adds interpretation work.',
-        },
-        {
-          src: 'projects/activewear-ad-analysis/research/creative/plain-language-variant.png',
-          alt: 'An ad example using a text-led comparison beside activewear imagery; identifying brand lockup cropped out',
-          caption: 'Message clarity · The review called for a simpler comparison that states the point directly.',
-        },
-      ],
-    },
-    {
       type: 'deliverables',
       heading: 'How I approached the analysis',
       layout: 'three-up',
@@ -109,13 +85,7 @@ export const activewearCampaignPerformance: CaseStudy = {
       type: 'text',
       heading: 'What this achieved',
       body:
-        'The analysis replaced a vague “pick the winning ad” decision with a practical creative direction: keep the human problem, simplify the explanation, support it visually, and make the product handoff credible. It also clarified how to judge the next round across the full funnel. The PDFs contain no post-edit test results, so this is the improvement to the strategy and brief—not a claim that campaign performance already changed.',
-    },
-    {
-      type: 'text',
-      heading: 'Evidence note',
-      body:
-        'The source ads contain health-related statements used as creative copy. This case study assesses ad performance and message clarity; the statements are not presented as verified product or medical facts.',
+        'The analysis replaced a vague “pick the winning ad” decision with a practical creative direction: keep the human problem, simplify the explanation, support it visually, and make the product handoff credible. It also clarified how to judge the next round across the full funnel.',
     },
   ],
 };

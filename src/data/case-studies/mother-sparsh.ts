@@ -51,7 +51,7 @@ export const motherSparsh: CaseStudy = {
     },
     {
       type: 'deliverables',
-      heading: '01 · Credibility Transfer — Anchor in Proven Trust',
+      heading: '01 · Credibility Transfer: Anchor in Proven Trust',
       layout: 'three-up',
       items: [
         'Positioned the 99% Pure Water Unscented Wipes as the campaign’s proof point, foregrounding their clinical and dermatological credentials.',
@@ -81,11 +81,11 @@ export const motherSparsh: CaseStudy = {
     },
     {
       type: 'deliverables',
-      heading: '02 · Risk Reduction — Lead With Reassurance',
+      heading: '02 · Risk Reduction: Lead With Reassurance',
       layout: 'three-up',
       items: [
         'Hero message: “Safe to use products for your baby since DAY 1.”',
-        'Addressed the parent’s highest-priority concern—newborn safety—before introducing any product.',
+        'Addressed the parent’s highest-priority concern, newborn safety, before introducing any product.',
         'Designed to reduce initial purchase anxiety and establish emotional relevance.',
       ],
     },

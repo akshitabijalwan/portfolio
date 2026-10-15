@@ -15,16 +15,16 @@ export default function App() {
   useEffect(() => {
     switch (route.path) {
       case '/about':
-        document.title = `About — ${siteConfig.candidateName}`;
+        document.title = `About | ${siteConfig.candidateName}`;
         break;
       case '/projects/:slug': {
         const slug = route.params.slug;
         const caseStudy = getCaseStudy(slug);
-        document.title = `${caseStudy?.brand ?? 'Project'} — ${siteConfig.candidateName}`;
+        document.title = `${caseStudy?.brand ?? 'Project'} | ${siteConfig.candidateName}`;
         break;
       }
       default:
-        document.title = `${siteConfig.candidateName} — ${siteConfig.professionalTitle}`;
+        document.title = `${siteConfig.candidateName} | ${siteConfig.professionalTitle}`;
         break;
     }
   }, [route]);

@@ -7,6 +7,11 @@ interface ProjectPreviewProps {
 }
 
 export function ProjectPreview({ project }: ProjectPreviewProps) {
+  // Homepage previews share one landscape frame so cards stay aligned even
+  // when their source artwork has a square or portrait aspect ratio.
+  const aspectRatio = 'landscape';
+  const objectFit = project.coverFit ?? 'cover';
+
   return (
     <article className={styles.preview}>
       <a
@@ -18,8 +23,8 @@ export function ProjectPreview({ project }: ProjectPreviewProps) {
           <ResponsiveImage
             src={project.coverImage}
             alt={project.coverImageAlt}
-            aspectRatio={project.coverAspectRatio || 'landscape'}
-            objectFit={project.coverAspectRatio === 'auto' ? 'contain' : 'cover'}
+            aspectRatio={aspectRatio}
+            objectFit={objectFit}
             lazy
             className={styles.image}
           />

@@ -55,7 +55,7 @@ export const socialMediaCommunications: CaseStudy = {
           brandNotes: [
             { brand: 'Mother Sparsh', tone: 'mother', body: 'Handheld framing and natural light give product stories an accessible, credible UGC character.' },
             { brand: 'Malini', tone: 'malini', body: 'Soft light, textured close-ups, and muted earthy tones present the craft as premium and story-led.' },
-            { brand: 'Zooby', tone: 'zooby', body: 'A fixed palette, typography, and grid—with generous white space—keep the feed consistent.' },
+            { brand: 'Zooby', tone: 'zooby', body: 'A fixed palette, typography, and grid, paired with generous white space, keep the feed consistent.' },
           ],
         },
         {
@@ -69,7 +69,7 @@ export const socialMediaCommunications: CaseStudy = {
         },
         {
           title: 'Measure the outcome and choose what is next',
-          summary: 'Measurement should reflect the business goal, so each brand has one result to track—such as engagement, saves, or repeat-purchase mentions.',
+          summary: 'Measurement should reflect the business goal, so each brand has one result to track, such as engagement, saves, or repeat-purchase mentions.',
           callout: 'I close with a test or change for the next round. That turns a set of posts into a learning loop, rather than treating each post as a one-off.',
         },
       ],
@@ -78,7 +78,7 @@ export const socialMediaCommunications: CaseStudy = {
       type: 'image-gallery',
       layout: 'social-carousel',
       aspectRatio: 'portrait',
-      heading: '01 · Mother Sparsh — Trust, care & product education',
+      heading: '01 · Mother Sparsh | Trust, care & product education',
       images: [
         {
           src: 'projects/social-media-communications/mother-sparsh/01-profile.jpeg',
@@ -98,7 +98,7 @@ export const socialMediaCommunications: CaseStudy = {
       type: 'image-gallery',
       layout: 'social-carousel',
       aspectRatio: 'portrait',
-      heading: '02 · Malini — Craft, material & modern styling',
+      heading: '02 · Malini | Craft, material & modern styling',
       images: [
         {
           src: 'projects/social-media-communications/malini/01-profile.jpeg',
@@ -118,7 +118,7 @@ export const socialMediaCommunications: CaseStudy = {
       type: 'image-gallery',
       layout: 'social-carousel',
       aspectRatio: 'portrait',
-      heading: '03 · Zooby — Little comforts, clearly shown',
+      heading: '03 · Zooby | Little comforts, clearly shown',
       images: [
         {
           src: 'projects/social-media-communications/zooby/01-profile.jpeg',
@@ -139,7 +139,7 @@ export const socialMediaCommunications: CaseStudy = {
       layout: 'social-carousel',
       aspectRatio: 'square',
       groupHeading: 'Product Visual Design: Tech & Jewelry series',
-      heading: '04 · Tech — offers & campaign energy',
+      heading: '04 · Tech | Offers & campaign energy',
       headingLevel: 3,
       images: [
         {

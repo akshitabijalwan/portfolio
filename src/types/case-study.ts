@@ -44,6 +44,7 @@ export interface CaseStudyImageGallerySection {
   headingLevel?: 2 | 3;
   description?: string;
   layout?: 'editorial-rail' | 'social-carousel';
+  compact?: boolean;
   aspectRatio?: 'landscape' | 'portrait' | 'square' | 'auto';
   images: CaseStudyImage[];
 }

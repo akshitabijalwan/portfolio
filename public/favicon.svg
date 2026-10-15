@@ -1,4 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="4" fill="#191919"/>
-  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#F8F7F4" font-family="Georgia, serif" font-size="18" font-weight="400">T</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect x="2" y="2" width="60" height="60" rx="18" fill="#f6f5ef" />
+  <rect x="2.75" y="2.75" width="58.5" height="58.5" rx="17.25" fill="none" stroke="#d9ded8" stroke-width="1.5" />
+  <text
+    x="32"
+    y="44"
+    text-anchor="middle"
+    font-family="'Snell Roundhand', 'Apple Chancery', 'Brush Script MT', cursive"
+    font-size="34"
+    font-weight="600"
+    font-style="italic"
+    letter-spacing="-2"
+    fill="#16765e"
+  >AB</text>
 </svg>

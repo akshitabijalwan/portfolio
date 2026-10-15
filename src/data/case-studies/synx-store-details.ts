@@ -17,7 +17,7 @@ export const synxStoreDetails: CaseStudy = {
       type: 'pull-quote',
       quote:
         'We’re building a garden tool brand that reflects what people actually care about: tools that work well, last long, and don’t cost more than they should.',
-      attribution: 'Synx Store — Brand Positioning',
+      attribution: 'Synx Store | Brand Positioning',
     },
     {
       type: 'statistics',

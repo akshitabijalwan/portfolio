@@ -13,6 +13,7 @@ interface CaseStudySectionsProps {
   sections: CaseStudySection[];
   visualTone?: 'baby';
   galleriesFirst?: boolean;
+  wideIntro?: boolean;
 }
 
 function EditorialGallery({
@@ -22,6 +23,7 @@ function EditorialGallery({
   description,
   images,
   aspectRatio = 'landscape',
+  compact = false,
   social = false,
   onOpen,
 }: {
@@ -31,6 +33,7 @@ function EditorialGallery({
   description?: string;
   images: { src: string; alt: string; caption?: string }[];
   aspectRatio?: 'landscape' | 'portrait' | 'square' | 'auto';
+  compact?: boolean;
   social?: boolean;
   onOpen: (index: number) => void;
 }) {
@@ -64,7 +67,7 @@ function EditorialGallery({
   }, []);
 
   return (
-    <section className={`${styles.gallerySection} ${social ? styles.socialStreamGallery : ''} ${social && aspectRatio === 'portrait' ? styles.socialPortraitGallery : ''}`}>
+    <section className={`${styles.gallerySection} ${social ? styles.socialStreamGallery : ''} ${social && aspectRatio === 'portrait' ? styles.socialPortraitGallery : ''} ${compact ? styles.compactEditorialGallery : ''}`}>
       {groupHeading && <h2 className={styles.socialGalleryGroupHeading}>{groupHeading}</h2>}
       {heading && <HeadingTag className={styles.sectionHeading}>{heading}</HeadingTag>}
       {description && <p className={styles.socialStreamDescription}>{description}</p>}
@@ -106,6 +109,7 @@ export function CaseStudySections({
   sections,
   visualTone,
   galleriesFirst = false,
+  wideIntro = false,
 }: CaseStudySectionsProps) {
   const [lightboxImages, setLightboxImages] = useState<
     { src: string; alt: string; caption?: string }[]
@@ -139,6 +143,7 @@ export function CaseStudySections({
             description={section.description}
             images={section.images}
             aspectRatio={section.aspectRatio}
+            compact={section.compact}
             social={section.layout === 'social-carousel'}
             onOpen={(imageIndex) =>
               openLightbox(
@@ -209,8 +214,8 @@ export function CaseStudySections({
 
       {/* Overview */}
       {overview.trim() && (
-        <Container narrow>
-          <section className={styles.textSection}>
+        <Container narrow={!wideIntro}>
+          <section className={`${styles.textSection} ${wideIntro ? styles.wideResearchIntro : ''}`}>
             <h2 className={styles.sectionHeading}>Overview</h2>
             <p className={styles.body}>{overview}</p>
           </section>
@@ -219,8 +224,8 @@ export function CaseStudySections({
 
       {/* Challenge */}
       {challenge && (
-        <Container narrow>
-          <section className={styles.textSection}>
+        <Container narrow={!wideIntro}>
+          <section className={`${styles.textSection} ${wideIntro ? styles.wideResearchIntro : ''}`}>
             <h2 className={styles.sectionHeading}>The Challenge</h2>
             <p className={styles.body}>{challenge}</p>
           </section>

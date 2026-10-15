@@ -58,6 +58,7 @@ export function CaseStudyPage({ slug }: CaseStudyPageProps) {
         responsibilities={caseStudy.responsibilities}
         sections={caseStudy.sections}
         visualTone={slug === 'mother-sparsh' ? 'baby' : undefined}
+        wideIntro={slug === 'activewear-ad-set' || slug === 'activewear-campaign-performance'}
       />
       <ProjectNavigation
         previousProject={previousProject}

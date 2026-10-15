@@ -22,7 +22,7 @@ export const productLaunchGoToMarket: CaseStudy = {
   duration: '5 months',
   heroImage: {
     src: 'projects/product-launch-go-to-market/hero.svg',
-    alt: 'Placeholder — Product launch project hero image',
+    alt: 'Placeholder: Product launch project hero image',
   },
   overview:
     'This project involved developing and executing the go-to-market strategy for a new product line in the lifestyle and wellness category. The work spanned consumer research, channel strategy, launch planning, and post-launch performance tracking.',
@@ -47,7 +47,7 @@ export const productLaunchGoToMarket: CaseStudy = {
       body: 'The go-to-market strategy was built around a phased approach, beginning with a targeted digital-first launch followed by broader retail distribution. The strategy prioritised channels with high target-audience concentration and strong brand alignment.',
       image: {
         src: 'projects/product-launch-go-to-market/campaign-01.svg',
-        alt: 'Placeholder — Go-to-market strategy visual',
+        alt: 'Placeholder: Go-to-market strategy visual',
         caption: '[Placeholder] Go-to-market strategy overview',
       },
       imagePosition: 'right',
@@ -56,7 +56,7 @@ export const productLaunchGoToMarket: CaseStudy = {
       type: 'full-width-image',
       image: {
         src: 'projects/product-launch-go-to-market/campaign-02.svg',
-        alt: 'Placeholder — Product launch visual',
+        alt: 'Placeholder: Product launch visual',
         caption: '[Placeholder] Product launch creative',
       },
     },

@@ -10,7 +10,7 @@ const images = [
     height: 1000,
     category: 'Brand Strategy',
     title: 'Brand Positioning & Strategy',
-    label: 'Cover Image — 16:10',
+    label: 'Cover Image: 16:10',
   },
   {
     dir: 'public/projects/brand-positioning-strategy',
@@ -19,7 +19,7 @@ const images = [
     height: 1080,
     category: 'Brand Strategy',
     title: 'Brand Positioning & Strategy',
-    label: 'Hero Visual — 16:9',
+    label: 'Hero Visual: 16:9',
   },
   {
     dir: 'public/projects/brand-positioning-strategy',
@@ -37,7 +37,7 @@ const images = [
     height: 900,
     category: 'Brand Strategy',
     title: 'Brand Positioning Framework',
-    label: 'Two-Column Layout — Left',
+    label: 'Two-Column Layout: Left',
   },
   {
     dir: 'public/projects/brand-positioning-strategy',
@@ -46,7 +46,7 @@ const images = [
     height: 900,
     category: 'Brand Strategy',
     title: 'Brand Architecture & Hierarchy',
-    label: 'Two-Column Layout — Right',
+    label: 'Two-Column Layout: Right',
   },
 
   // Integrated Marketing Campaign
@@ -57,7 +57,7 @@ const images = [
     height: 1000,
     category: 'Campaign Planning',
     title: 'Integrated Marketing Campaign',
-    label: 'Cover Image — 16:10',
+    label: 'Cover Image: 16:10',
   },
   {
     dir: 'public/projects/integrated-marketing-campaign',
@@ -66,7 +66,7 @@ const images = [
     height: 1080,
     category: 'Campaign Planning',
     title: 'Integrated Marketing Campaign',
-    label: 'Hero Visual — 16:9',
+    label: 'Hero Visual: 16:9',
   },
   {
     dir: 'public/projects/integrated-marketing-campaign',
@@ -113,7 +113,7 @@ const images = [
     height: 1600,
     category: 'Go-to-Market Strategy',
     title: 'Product Launch & Go-to-Market',
-    label: 'Cover Image — 3:4 Portrait',
+    label: 'Cover Image: 3:4 Portrait',
   },
   {
     dir: 'public/projects/product-launch-go-to-market',
@@ -122,7 +122,7 @@ const images = [
     height: 1080,
     category: 'Go-to-Market Strategy',
     title: 'Product Launch & Go-to-Market',
-    label: 'Hero Visual — 16:9',
+    label: 'Hero Visual: 16:9',
   },
   {
     dir: 'public/projects/product-launch-go-to-market',
@@ -150,7 +150,7 @@ const images = [
     width: 1200,
     height: 630,
     category: 'Brand Manager Portfolio',
-    title: 'Tara Sharma — Portfolio',
+    title: 'Tara Sharma | Portfolio',
     label: 'Open Graph Social Preview',
   },
 ];

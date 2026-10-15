@@ -22,7 +22,7 @@ export const brandPositioningStrategy: CaseStudy = {
   duration: '4 months',
   heroImage: {
     src: 'projects/brand-positioning-strategy/hero.svg',
-    alt: 'Placeholder — Brand strategy project hero image',
+    alt: 'Placeholder: Brand strategy project hero image',
   },
   overview:
     'This project involved repositioning a consumer goods brand to better align with shifting consumer preferences and competitive dynamics. The work encompassed a complete brand audit, consumer research, competitive analysis, and the development of a new brand positioning framework.',
@@ -45,7 +45,7 @@ export const brandPositioningStrategy: CaseStudy = {
       type: 'full-width-image',
       image: {
         src: 'projects/brand-positioning-strategy/campaign-01.svg',
-        alt: 'Placeholder — Research and insights visual',
+        alt: 'Placeholder: Research and insights visual',
         caption: '[Placeholder] Research and insights documentation',
       },
     },
@@ -59,12 +59,12 @@ export const brandPositioningStrategy: CaseStudy = {
       images: [
         {
           src: 'projects/brand-positioning-strategy/campaign-02.svg',
-          alt: 'Placeholder — Strategy framework visual',
+          alt: 'Placeholder: Strategy framework visual',
           caption: '[Placeholder] Positioning framework',
         },
         {
           src: 'projects/brand-positioning-strategy/campaign-03.svg',
-          alt: 'Placeholder — Brand architecture visual',
+          alt: 'Placeholder: Brand architecture visual',
           caption: '[Placeholder] Brand architecture',
         },
       ],

@@ -24,6 +24,10 @@
   max-width: 65ch;
 }
 
+.wideResearchIntro .body {
+  max-width: none;
+}
+
 .babyObjectiveCallout {
   display: grid;
   grid-template-columns: minmax(170px, 0.38fr) minmax(0, 1fr);
@@ -331,6 +335,16 @@
   margin-top: 0.85rem;
   min-height: 2.8em;
   font-size: 0.92rem;
+}
+
+.compactEditorialGallery .editorialCard {
+  flex-basis: min(33%, 380px);
+  padding: 0.75rem;
+  border-radius: 21px;
+}
+
+.compactEditorialGallery .editorialTrack {
+  gap: clamp(0.75rem, 1.5vw, 1.25rem);
 }
 
 /* Brand-specific social content rails */
@@ -651,6 +665,10 @@
     border-radius: 22px;
   }
 
+  .compactEditorialGallery .editorialCard {
+    flex-basis: min(78%, 340px);
+  }
+
   .socialStreamCard,
   .socialPortraitGallery .socialStreamCard {
     flex-basis: min(76%, 360px);
@@ -693,6 +711,10 @@
     flex-basis: 90%;
     padding: 0.75rem;
   }
+
+  .compactEditorialGallery .editorialCard {
+    flex-basis: min(86%, 340px);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -718,8 +740,12 @@
 }
 
 .strategyFrameworkIntro {
-  max-width: 780px;
+  max-width: none;
   margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.strategyFrameworkIntro .body {
+  max-width: none;
 }
 
 .strategyFrameworkIntro .sectionHeading {
@@ -734,7 +760,7 @@
 
 .strategyStep {
   display: grid;
-  grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.65fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: clamp(1.25rem, 3vw, 3rem);
   padding: clamp(1.4rem, 2.6vw, 2rem) 0;
   border-bottom: 1px solid rgba(29, 33, 32, 0.1);
@@ -771,7 +797,7 @@
 }
 
 .strategyStepHeading p {
-  max-width: 34ch;
+  max-width: none;
   color: var(--color-text-secondary);
   font-size: 0.88rem;
   line-height: 1.55;
@@ -813,7 +839,7 @@
 .strategyZooby { background: #eaf6f8; border-color: rgba(96, 174, 194, 0.2); }
 
 .strategyCallout {
-  grid-column: 2;
+  grid-column: 1;
   padding: 1.1rem 1.25rem;
   border-radius: 16px;
   background: #26332b;

@@ -8,7 +8,7 @@ export interface ProjectMeta {
   summary: string;
   coverImage: string;
   coverImageAlt: string;
-  coverAspectRatio?: 'landscape' | 'portrait' | 'square' | 'auto';
+  coverFit?: 'cover' | 'contain';
   role: string;
   featured: boolean;
   order: number;

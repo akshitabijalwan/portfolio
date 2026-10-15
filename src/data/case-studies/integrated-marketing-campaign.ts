@@ -22,7 +22,7 @@ export const integratedMarketingCampaign: CaseStudy = {
   duration: '6 months',
   heroImage: {
     src: 'projects/integrated-marketing-campaign/hero.svg',
-    alt: 'Placeholder — Integrated marketing campaign hero image',
+    alt: 'Placeholder: Integrated marketing campaign hero image',
   },
   overview:
     'This project involved planning and executing an integrated marketing campaign across digital, social, and traditional channels to support a major product launch. The campaign aimed to build brand awareness, generate consideration, and drive customer acquisition.',
@@ -45,7 +45,7 @@ export const integratedMarketingCampaign: CaseStudy = {
       type: 'full-width-image',
       image: {
         src: 'projects/integrated-marketing-campaign/campaign-01.svg',
-        alt: 'Placeholder — Campaign creative concept',
+        alt: 'Placeholder: Campaign creative concept',
         caption: '[Placeholder] Campaign creative concept',
       },
     },
@@ -60,17 +60,17 @@ export const integratedMarketingCampaign: CaseStudy = {
       images: [
         {
           src: 'projects/integrated-marketing-campaign/campaign-02.svg',
-          alt: 'Placeholder — Social media campaign asset',
+          alt: 'Placeholder: Social media campaign asset',
           caption: '[Placeholder] Social media asset',
         },
         {
           src: 'projects/integrated-marketing-campaign/campaign-03.svg',
-          alt: 'Placeholder — Digital display advertising',
+          alt: 'Placeholder: Digital display advertising',
           caption: '[Placeholder] Digital display ad',
         },
         {
           src: 'projects/integrated-marketing-campaign/campaign-04.svg',
-          alt: 'Placeholder — Out-of-home advertising',
+          alt: 'Placeholder: Out-of-home advertising',
           caption: '[Placeholder] OOH placement',
         },
       ],

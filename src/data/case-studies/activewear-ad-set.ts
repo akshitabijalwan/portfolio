@@ -3,13 +3,13 @@ import type { CaseStudy } from '../../types/case-study';
 export const activewearAdSetAnalysis: CaseStudy = {
   slug: 'activewear-ad-set',
   title: 'Creative Research Within Ad Sets',
-  brand: 'Bamboo Activewear · Creative Research',
+  brand: 'Activewear · Creative Research',
   year: '',
   industry: 'Activewear / Paid Social',
   category: 'Ad-set Creative Analysis',
   role: '',
   overview:
-    'The question was not simply which ad got the first view. I compared the opening, message clarity, visual support, and retention curve to find where attention turned into confusion—and how to make the story easier to follow.',
+    'The question was not simply which ad got the first view. I compared the opening, message clarity, visual support, and retention curve to find where attention turned into confusion, and how to make the story easier to follow.',
   challenge:
     'Several variations opened strongly, but that attention did not always survive the explanation. Technical language, indirect comparisons, and abrupt product switches added friction. The brief was to find the exact moments that lost viewers, preserve the useful hooks, and define specific edits for the next test.',
   objectives: [
@@ -22,6 +22,7 @@ export const activewearAdSetAnalysis: CaseStudy = {
     {
       type: 'image-gallery',
       layout: 'editorial-rail',
+      compact: true,
       heading: 'The creative variants I reviewed',
       description: 'The source deck compared a direct customer-style opener with a more indirect product comparison. Brand marks are omitted; the examples are shown as advertising creative, not as verified product claims.',
       aspectRatio: 'square',
@@ -55,6 +56,7 @@ export const activewearAdSetAnalysis: CaseStudy = {
     {
       type: 'image-gallery',
       layout: 'editorial-rail',
+      compact: true,
       heading: 'The drop-off tells us where to simplify',
       description: 'I read the curve alongside the edit: a steep early fall flags an opening problem; a later break points to a weak explanation or transition.',
       aspectRatio: 'auto',
@@ -102,20 +104,14 @@ export const activewearAdSetAnalysis: CaseStudy = {
         { phase: '02 · Clarify', description: 'Replace indirect comparisons with one plain-language benefit. Remove extra technical setup.' },
         { phase: '03 · Support', description: 'Show the context while it is being explained: use relevant on-screen text or a split-screen demonstration.' },
         { phase: '04 · Connect', description: 'Bridge from the problem to the product in the same story, then give a clear next step.' },
-        { phase: '05 · Test', description: 'Change one variable at a time—hook, thumbnail, explanation length, or product transition—and compare retention with clicks and purchases.' },
+        { phase: '05 · Test', description: 'Change one variable at a time, such as the hook, thumbnail, explanation length, or product transition. Then compare retention with clicks and purchases.' },
       ],
     },
     {
       type: 'text',
       heading: 'What the analysis delivered',
       body:
-        'The review turned creative screenshots and retention curves into a practical editing brief: keep the personal hook, simplify the explanation, match the visual to the message, and make the product transition feel earned. The source material does not report a later test using these edits, so the outcome here is a prioritized improvement plan—not a claimed performance lift.',
-    },
-    {
-      type: 'text',
-      heading: 'Evidence note',
-      body:
-        'The source ads contain health-related statements used as creative copy. This case study evaluates their clarity, pacing, and audience response; it does not verify or endorse the underlying health claims.',
+        'The review turned creative screenshots and retention curves into a practical editing brief: keep the personal hook, simplify the explanation, match the visual to the message, and make the product transition feel earned.',
     },
   ],
 };
