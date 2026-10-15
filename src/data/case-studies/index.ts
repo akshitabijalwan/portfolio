@@ -3,6 +3,10 @@ import { synxStore } from './synx-store';
 import { activewearAdAnalysis } from './activewear-ad-analysis';
 import { motherSparsh } from './mother-sparsh';
 import { socialMediaCommunications } from './social-media-communications';
+import { synxStoreDetails } from './synx-store-details';
+import { referMe } from './referme';
+import { activewearAdSetAnalysis } from './activewear-ad-set';
+import { activewearCampaignPerformance } from './activewear-campaign-performance';
 
 /**
  * All case studies, indexed by slug.
@@ -13,13 +17,16 @@ import { socialMediaCommunications } from './social-media-communications';
  */
 export const caseStudies: Record<string, CaseStudy> = {
   'synx-store': synxStore,
+  'synx-store-details': synxStoreDetails,
+  referme: referMe,
   'activewear-ad-analysis': activewearAdAnalysis,
+  'activewear-ad-set': activewearAdSetAnalysis,
+  'activewear-campaign-performance': activewearCampaignPerformance,
   'mother-sparsh': motherSparsh,
   'social-media-communications': socialMediaCommunications,
 };
 
 export function getCaseStudy(slug: string): CaseStudy | undefined {
-  if (slug === 'referme') return synxStore;
   return caseStudies[slug];
 }
 

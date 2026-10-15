@@ -69,7 +69,7 @@ function EditorialGallery({
       {heading && <HeadingTag className={styles.sectionHeading}>{heading}</HeadingTag>}
       {description && <p className={styles.socialStreamDescription}>{description}</p>}
       <p className={styles.galleryHint}>
-        {social ? 'Swipe or scroll through this content stream' : 'Scroll to explore the applications'}
+        {social ? 'Swipe or scroll through this content stream' : 'Scroll to explore the visuals'}
         <span aria-hidden="true">→</span>
       </p>
       <div className={styles.editorialTrack} ref={trackRef}>
@@ -271,8 +271,8 @@ export function CaseStudySections({
         switch (section.type) {
           case 'text':
             return (
-              <Container narrow key={idx}>
-                <section className={styles.textSection}>
+              <Container narrow={!visualTone || section.layout !== 'callout'} key={idx}>
+                <section className={`${styles.textSection} ${visualTone === 'baby' && section.layout === 'callout' ? styles.babyObjectiveCallout : ''}`}>
                   {section.heading && (
                     <h2 className={styles.sectionHeading}>{section.heading}</h2>
                   )}
@@ -363,8 +363,8 @@ export function CaseStudySections({
 
           case 'pull-quote':
             return (
-              <Container narrow key={idx}>
-                <blockquote className={styles.pullQuote}>
+              <Container narrow={!visualTone} key={idx}>
+                <blockquote className={`${styles.pullQuote} ${visualTone === 'baby' ? styles.babyCoreChallenge : ''}`}>
                   <p className={styles.quoteText}>{section.quote}</p>
                   {section.attribution && (
                     <cite className={styles.quoteAttribution}>
@@ -418,8 +418,8 @@ export function CaseStudySections({
 
           case 'deliverables':
             return (
-              <Container narrow key={idx}>
-                <section className={styles.deliverablesSection}>
+              <Container narrow={!visualTone} key={idx}>
+                <section className={`${styles.deliverablesSection} ${visualTone === 'baby' ? styles.babyDeliverables : ''} ${visualTone === 'baby' && section.layout === 'three-up' ? styles.babyThreeUpPoints : ''}`}>
                   {section.heading && (
                     <h2 className={styles.sectionHeading}>{section.heading}</h2>
                   )}
@@ -489,7 +489,7 @@ export function CaseStudySections({
               <Container key={idx}>
                 <section className={styles.analysisSection}>
                   <div className={styles.analysisIntro}>
-                    <span className={styles.analysisKicker}>Campaign readout · March 24 — May 25</span>
+                    <span className={styles.analysisKicker}>Paid-social readout · {section.rows.length} ads</span>
                     <h2 className={styles.sectionHeading}>{section.heading}</h2>
                     <p className={styles.body}>{section.intro}</p>
                   </div>
@@ -555,7 +555,7 @@ export function CaseStudySections({
                     ))}
                   </div>
 
-                  <div className={styles.retentionPanel}>
+                  {section.comparison && section.comparison.length > 0 && <div className={styles.retentionPanel}>
                     <div className={styles.findingsHeader}>
                       <span className={styles.analysisKicker}>Separate ad-set video comparison</span>
                       <h3>A measurable lift when the story gets to the point</h3>
@@ -576,7 +576,7 @@ export function CaseStudySections({
                         </article>
                       ))}
                     </div>
-                  </div>
+                  </div>}
                   <p className={styles.claimNote}>The source material evaluates advertising performance and messaging. Health-related statements appearing in campaign scripts are treated here as creative claims and have not been independently verified.</p>
                 </section>
               </Container>

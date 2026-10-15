@@ -6,9 +6,28 @@ import styles from './ProjectNavigation.module.css';
 interface ProjectNavigationProps {
   previousProject?: ProjectMeta;
   nextProject?: ProjectMeta;
+  parentProject?: ProjectMeta;
 }
 
-export function ProjectNavigation({ previousProject, nextProject }: ProjectNavigationProps) {
+export function ProjectNavigation({ previousProject, nextProject, parentProject }: ProjectNavigationProps) {
+  if (parentProject) {
+    return (
+      <nav className={styles.nav} aria-label="Project navigation">
+        <Container>
+          <div className={styles.inner}>
+            <a href={`#/projects/${parentProject.slug}`} className={styles.link}>
+              <ArrowLeft size={16} />
+              <div className={styles.linkContent}>
+                <span className={styles.direction}>Back to case study</span>
+                <span className={styles.projectTitle}>{parentProject.title}</span>
+              </div>
+            </a>
+          </div>
+        </Container>
+      </nav>
+    );
+  }
+
   if (!previousProject && !nextProject) return null;
 
   return (

@@ -21,7 +21,7 @@ export const siteConfig: SiteConfig = {
     },
   ],
   shortBio:
-    'I’m a brand manager with experience across baby care, e-commerce, activewear, and consumer campaigns. My work spans new product development, portfolio review, brand positioning, identity systems, digital experience, content, and paid social. With a foundation in visual communication and design, I connect research and customer understanding to clear, practical brand expression.',
+    "I turn brand goals into shipped results. I find the insight, make the call, and build the execution that moves customers from first touch to purchase. Across baby care, e-commerce, and activewear, I've worked on product launches, positioning, identity, and paid social, and I measure every decision against the outcome it's meant to drive.",
   email: 'akshitabijalwan9@gmail.com',
   phone: '+91-8929040546',
   location: 'Chandigarh, India',
@@ -46,8 +46,8 @@ export const siteConfig: SiteConfig = {
       organization: 'Mother Sparsh',
       dates: 'Aug 2025 – Aug 2026',
       highlights: [
-        'Shaped new product development from concept and positioning through packaging and launch readiness.',
-        'Reviewed the product portfolio and product mix, identifying gaps and opportunities to strengthen brand relevance.',
+        'Shipped new products from concept to launch, owning positioning, packaging, and launch readiness against a clear revenue goal.',
+        'Audited the full product portfolio and mix, closing gaps and sharpening brand relevance.',
       ],
     },
     {
@@ -55,14 +55,14 @@ export const siteConfig: SiteConfig = {
       organization: 'Mother Sparsh',
       dates: 'May 2023 – Dec 2024',
       highlights: [
-        'Developed brand guidelines and partnered with UI/UX and digital teams to improve the website experience, content, and search visibility.',
+        'Built the brand system (guidelines) and partnered with UI/UX and digital to ship a faster, more discoverable website with stronger content and search visibility.',
       ],
     },
     {
       role: 'Visual Communication Designer',
       dates: 'Sep 2019 – May 2020',
       highlights: [
-        'Supported market and competitor research, positioning, messaging, campaign planning, and cross-functional team needs.',
+        'Ran market and competitor research to sharpen positioning, messaging, and campaign planning across cross-functional teams.',
       ],
     },
   ],
@@ -80,51 +80,71 @@ export const siteConfig: SiteConfig = {
   ],
   selectedProjects: [
     {
-      name: 'Synx Store + ReferMe',
-      focus: 'Brand identity, e-commerce & campaign strategy',
-      detail: 'Created Synx Store’s brand book and Amazon storefront, then developed ReferMe’s connecting-thread identity and campaign for a professional referral network.',
+      name: 'Synx Store',
+      focus: 'Brand Identity, E-commerce & Campaign Strategy',
+      highlights: [
+        'Defined the brand strategy for a new D2C product, translating customer and category research into a brand book and Amazon storefront that a buyer could trust at first sight.',
+      ],
     },
     {
-      name: 'Confidential activewear brand',
+      name: 'ReferMe',
+      focus: 'Brand Identity & Campaign',
+      highlights: [
+        'Researched the professional referral market to build a connecting-thread identity and launch campaign that positioned the product around trust and early adoption.',
+      ],
+    },
+    {
+      name: 'Activewear Brand',
       focus: 'Paid Social & Creative Analysis',
-      detail: 'Analyzed campaign and ad-set performance to identify creative patterns and opportunities.',
+      highlights: [
+        'Analyzed campaign and ad-set performance to identify the creative patterns driving engagement, then used those findings to set the strategy for each round of testing and scaling.',
+      ],
     },
     {
       name: 'Dugli',
       focus: 'Brand & Content',
       dates: 'Jan – Jul 2025',
-      detail: 'Developed a Garhwali alphabet book using cultural and language content to support preservation of a declining language.',
+      highlights: [
+        'Researched the Garhwali language in depth, including its speakers, cultural context, and the gap in existing learning content, then built the brand strategy on that evidence.',
+        'Developed a Garhwali alphabet book that serves the learner and the mission of preserving a declining language.',
+      ],
     },
     {
       name: 'Craft Cluster Project',
       focus: 'Design & Market Research',
       dates: 'Oct 2020 – Jun 2021',
-      detail: 'Researched Rajasthan metal-embroidery artisans and market gaps, supported product development, and trained artisans in social media.',
+      highlights: [
+        'Researched Rajasthan metal-embroidery artisans and their market gaps, then shaped product development around the opportunities the research surfaced.',
+        'Trained artisans in social media so they could reach buyers directly, extending the strategy beyond the product itself.',
+      ],
     },
     {
-      name: 'Zooby · Netherlands',
+      name: 'Zooby, Netherlands',
       focus: 'Content & Ads Management',
-      detail: 'Managed Facebook and Instagram ads, stories, and highlights, using iterative testing to refine content.',
+      highlights: [
+        'Structured Facebook and Instagram ad and story strategy around iterative testing, using results to cut weak creative and scale what converted.',
+      ],
     },
     {
-      name: 'Orive · Netherlands',
+      name: 'Orive, Netherlands',
       focus: 'Packaging & Brand Design',
-      detail: 'Created 3D packaging and website visuals.',
+      highlights: [
+        'Designed 3D packaging and website visuals to answer a specific discovery and conversion goal at the point of purchase.',
+      ],
     },
     {
-      name: 'Malini · Italy',
+      name: 'Malini, Italy',
       focus: 'Social Media & Content Management',
-      detail: 'Managed social media and content.',
+      highlights: [
+        'Set the content strategy and managed the pipeline to keep the brand consistent and visible across channels.',
+      ],
     },
     {
-      name: 'Porter · India',
+      name: 'Porter, India',
       focus: 'Campaign & Communication Design',
-      detail: 'Designed straightforward driver-partner campaigns focused on more trips and earning opportunities.',
-    },
-    {
-      name: 'Selected social streams',
-      focus: 'Social Media & Visual Communication',
-      detail: 'Developed brand-specific feed and campaign visuals across Malini, Mother Sparsh, Zooby, U-topia / TOPI.AI, and jewelry content.',
+      highlights: [
+        'Built driver-partner campaigns around the two levers that drive supply growth: more trips and more earning opportunities.',
+      ],
     },
   ],
   education: [
@@ -145,6 +165,7 @@ export const siteConfig: SiteConfig = {
 };
 
 export const navItems: NavItem[] = [
+  { label: 'Home', href: '#/' },
   { label: 'About', href: '#/about' },
   { label: 'Case Studies', href: '#selected-work' },
   { label: 'Contact', href: '#contact' },

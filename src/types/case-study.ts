@@ -15,6 +15,7 @@ export interface CaseStudyTextSection {
   type: 'text';
   heading?: string;
   body: string;
+  layout?: 'callout';
 }
 
 export interface CaseStudyTextWithImageSection {
@@ -69,6 +70,7 @@ export interface CaseStudyDeliverablesSection {
   type: 'deliverables';
   heading?: string;
   items: string[];
+  layout?: 'three-up';
 }
 
 export interface CaseStudyStrategyFrameworkSection {
@@ -99,7 +101,7 @@ export interface CaseStudyCampaignAnalysisSection {
     read: string;
   }[];
   findings: { eyebrow: string; title: string; body: string; metric?: string }[];
-  comparison: {
+  comparison?: {
     label: string;
     title: string;
     plays: string;

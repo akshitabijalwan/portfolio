@@ -63,6 +63,10 @@ export function Navigation() {
           )}
         </ul>
 
+        <a href="#/" className={`${styles.navLink} ${styles.mobileHomeLink}`} onClick={closeMobile}>
+          Home
+        </a>
+
         {/* Mobile toggle */}
         <button
           className={styles.mobileToggle}
@@ -81,7 +85,7 @@ export function Navigation() {
           aria-hidden={!mobileOpen}
         >
           <ul className={styles.mobileLinks}>
-            {navItems.map((item) => (
+            {navItems.filter((item) => item.label !== 'Home').map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}

@@ -4,14 +4,11 @@ import styles from './ProjectPreview.module.css';
 
 interface ProjectPreviewProps {
   project: ProjectMeta;
-  index: number;
 }
 
-export function ProjectPreview({ project, index }: ProjectPreviewProps) {
-  const toneClass = index % 3 === 1 ? styles.sage : index % 3 === 2 ? styles.sand : '';
-
+export function ProjectPreview({ project }: ProjectPreviewProps) {
   return (
-    <article className={`${styles.preview} ${toneClass}`}>
+    <article className={styles.preview}>
       <a
         href={`#/projects/${project.slug}`}
         className={styles.link}
@@ -28,10 +25,6 @@ export function ProjectPreview({ project, index }: ProjectPreviewProps) {
           />
         </div>
         <div className={styles.info}>
-          <div className={styles.meta}>
-            <span className={styles.category}>{project.category}</span>
-            {project.year && <span className={styles.year}>{project.year}</span>}
-          </div>
           <h3 className={styles.title}>{project.title}</h3>
           <p className={styles.brand}>{project.brand}</p>
           <p className={styles.summary}>{project.summary}</p>

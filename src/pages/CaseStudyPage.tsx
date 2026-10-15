@@ -38,6 +38,15 @@ export function CaseStudyPage({ slug }: CaseStudyPageProps) {
   const previousProject = currentIndex > 0 ? allProjects[currentIndex - 1] : undefined;
   const nextProject =
     currentIndex < allProjects.length - 1 ? allProjects[currentIndex + 1] : undefined;
+  const parentProjectSlug =
+    caseStudy.slug === 'synx-store-details' || caseStudy.slug === 'referme'
+      ? 'synx-store'
+      : caseStudy.slug === 'activewear-ad-set' || caseStudy.slug === 'activewear-campaign-performance'
+        ? 'activewear-ad-analysis'
+        : undefined;
+  const parentProject = parentProjectSlug
+    ? allProjects.find((project) => project.slug === parentProjectSlug)
+    : undefined;
 
   return (
     <main className={`${styles.caseStudy} ${caseStudy.slug === 'mother-sparsh' ? styles.babyStudy : ''}`}>
@@ -49,11 +58,11 @@ export function CaseStudyPage({ slug }: CaseStudyPageProps) {
         responsibilities={caseStudy.responsibilities}
         sections={caseStudy.sections}
         visualTone={slug === 'mother-sparsh' ? 'baby' : undefined}
-        galleriesFirst={slug === 'mother-sparsh'}
       />
       <ProjectNavigation
         previousProject={previousProject}
         nextProject={nextProject}
+        parentProject={parentProject}
       />
     </main>
   );

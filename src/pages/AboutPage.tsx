@@ -43,7 +43,7 @@ export function AboutPage() {
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>Selected Project Work</h2>
+              <h2 className={styles.sectionTitle}>Project Work</h2>
               <div className={`${styles.recordList} ${styles.projectList}`}>
                 {siteConfig.selectedProjects.map((project) => (
                   <article className={styles.record} key={project.name}>
@@ -54,27 +54,23 @@ export function AboutPage() {
                       </div>
                       {project.dates && <span className={styles.recordDate}>{project.dates}</span>}
                     </div>
-                    <p className={styles.recordDetail}>{project.detail}</p>
+                    <ul className={styles.detailList}>
+                      {project.highlights.map((highlight) => (
+                        <li key={highlight}>{highlight}</li>
+                      ))}
+                    </ul>
                   </article>
                 ))}
               </div>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>Education</h2>
-              <div className={styles.recordList}>
-                {siteConfig.education.map((item) => (
-                  <article className={styles.record} key={item.institution}>
-                    <div className={styles.recordHeading}>
-                      <div>
-                        <h3 className={styles.recordTitle}>{item.qualification}</h3>
-                        <p className={styles.recordMeta}>{item.institution}</p>
-                      </div>
-                      <span className={styles.recordDate}>{item.dates}</span>
-                    </div>
-                  </article>
+              <h2 className={styles.sectionTitle}>Certifications</h2>
+              <ul className={styles.expertiseList}>
+                {siteConfig.courses.map((course) => (
+                  <li key={course} className={styles.expertiseItem}>{course}</li>
                 ))}
-              </div>
+              </ul>
             </section>
 
             <section className={styles.section}>
@@ -95,12 +91,20 @@ export function AboutPage() {
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>Training</h2>
-              <ul className={styles.expertiseList}>
-                {siteConfig.courses.map((course) => (
-                  <li key={course} className={styles.expertiseItem}>{course}</li>
+              <h2 className={styles.sectionTitle}>Education</h2>
+              <div className={styles.recordList}>
+                {siteConfig.education.map((item) => (
+                  <article className={styles.record} key={item.institution}>
+                    <div className={styles.recordHeading}>
+                      <div>
+                        <h3 className={styles.recordTitle}>{item.qualification}</h3>
+                        <p className={styles.recordMeta}>{item.institution}</p>
+                      </div>
+                      <span className={styles.recordDate}>{item.dates}</span>
+                    </div>
+                  </article>
                 ))}
-              </ul>
+              </div>
             </section>
 
             <section className={styles.section}>

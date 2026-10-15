@@ -27,7 +27,7 @@ export interface SiteConfig {
     name: string;
     focus: string;
     dates?: string;
-    detail: string;
+    highlights: string[];
   }[];
   education: {
     qualification: string;

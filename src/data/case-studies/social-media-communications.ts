@@ -2,7 +2,7 @@ import type { CaseStudy } from '../../types/case-study';
 
 export const socialMediaCommunications: CaseStudy = {
   slug: 'social-media-communications',
-  title: 'A Distinct Voice for Every Feed',
+  title: 'Intent to Impact: Multi-Brand Social Strategy',
   brand: 'Multi-brand social media',
   year: '',
   industry: 'Lifestyle, Baby Care, Technology & Retail',

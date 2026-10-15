@@ -214,6 +214,11 @@
 }
 
 .sidebar {
+  grid-column: 2;
+  justify-self: end;
+  width: 100%;
+  max-width: 280px;
+  margin-top: 4rem;
   position: sticky;
   top: calc(80px + var(--space-xl));
   padding: 1.35rem;
@@ -277,7 +282,11 @@
 
   .sidebar {
     position: static;
+    grid-column: 1;
+    justify-self: stretch;
     grid-row: 1;
+    max-width: none;
+    margin-top: 0;
   }
 
   .sidebarLinks {
