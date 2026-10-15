@@ -852,7 +852,8 @@
   --analysis-muted: #686d69;
   padding: clamp(2.25rem, 5vw, 4rem) 0 1rem;
 }
-.analysisIntro { max-width: 760px; margin-bottom: clamp(2rem, 5vw, 3.5rem); }
+.analysisIntro { width: 100%; max-width: none; margin-bottom: clamp(2rem, 5vw, 3.5rem); }
+.analysisIntro .body { width: 100%; max-width: none; }
 .analysisKicker { display: block; margin-bottom: 0.7rem; color: #5a6f37; font-size: 0.7rem; font-weight: 650; letter-spacing: 0.11em; line-height: 1.4; text-transform: uppercase; }
 .analysisIntro .sectionHeading { margin-bottom: 0.65rem; font-size: clamp(1.8rem, 3vw, 2.55rem); letter-spacing: -0.04em; }
 .analysisSpotlights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.9rem; margin: 2.4rem 0 clamp(2.75rem, 5vw, 4.5rem); }
